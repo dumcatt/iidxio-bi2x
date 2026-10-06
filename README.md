@@ -1,0 +1,112 @@
+# iidxio-bio2video
+Implementation of the Bemanitools iidxio API for BIO2 boards running BI2X
+firmware (IIDX "TDJ" / lightning model cabinets).
+
+As of 2.0 the board is driven directly: **libaio.dll, libaio-iob.dll,
+libaio-iob2_video.dll and libacc.dll are no longer loaded, linked or needed at
+build time.** The whole protocol stack (USB CDC link, IOB2 framing, node
+bring-up, TDJ I/O, tape LEDs) is reimplemented in `src/bi2x/`; see
+[docs/PROTOCOL.md](docs/PROTOCOL.md).
+
+The one thing that still comes from Konami's DLLs is the firmware *module* the
+BI2X needs uploaded every time it starts. It is a Konami binary, so it is not
+included here. The driver reads it straight out of `libaio-iob2_video.dll` and
+`libaio-iob.dll` (as data – the DLLs are never executed), or from
+`bi2x_tdj.bin` / `bi2x_sci.bin` which you can extract once with
+`bi2x-modextract` and then delete the DLLs.
+
+## How do I use it?
+
+### bi2xtest
+
+Run it and it brings the board up exactly like the game would (reset,
+handshake, module upload) and shows the inputs. Lamps follow the buttons and
+the turntable LEDs follow the platters, so all outputs can be checked.
+
+```
+bi2xtest [-p COM5] [-n] [-v] [-m module_dir]
+  -p PORT  COM port (default: find USB 1CCF:8050)
+  -n       skip the 8 second line-break board reset
+  -v       verbose protocol logging
+  -m DIR   directory with bi2x_*.bin or libaio-iob*.dll
+```
+
+### iidxio-bi2x.dll
+
+Rename `iidxio-bi2x.dll` to `iidxio.dll` and use it in place of the
+Bemanitools-supplied `iidxio.dll`. The firmware modules are looked for next to
+the DLL and in the working directory (the game directory already has the
+libaio DLLs). No config is required.
+
+Startup takes ~10 s: like the stock game, the board is reset with a line
+break and the modules are uploaded. If the board drops out it is reconnected
+automatically.
+
+### bio2video.ini
+
+Optional, next to `iidxio-bi2x.dll` (or in the working directory):
+
+```ini
+[LED]
+Woofer=0xFF00FF
+TTP1=0xFF0000
+TTP2=0x0000FF
+IccrP1=0xFF0000
+IccrP2=0x0000FF
+Pillar=0xFFFFFF
+; tape LED power limit, as in the stock library (max scale, average limit)
+TapeMax=0xFF
+TapeAverageLimit=0x55
+
+[Turntable]
+ResistP1=0
+ResistP2=0
+
+[BI2X]
+; COM port to use instead of searching for USB 1CCF:8050
+Port=
+; 1 = skip the line-break reset at start-up
+SkipReset=0
+; ms between I/O polls
+PollInterval=1
+```
+
+Pillar colours are passed through the same brightness limiter the stock
+library uses, so a full white pillar is dimmed to stay within the power budget.
+
+### bi2x-modextract
+
+```
+bi2x-modextract [dll directory] [output directory]
+```
+
+Writes `bi2x_tdj.bin` and `bi2x_sci.bin`. Tested with the 27 HEROIC VERSE
+DLLs; newer ones are located by following the `AIO_IOB2_BI2X_TDJ` vtable, so
+they should work too.
+
+## Nerd section
+### How do I build it?
+
+CMake on MinGW-w64. The iidxio DLL needs the bemanitools submodule
+(`git submodule update --init`); `bi2xtest` and `bi2x-modextract` do not.
+Nothing from Konami is needed to build.
+
+### Testing without a board
+
+`test/sim_bi2x.py` simulates the board side of the protocol (random frame
+encodings, encryption, line noise, dropped replies, power cycles). On Linux:
+
+```
+cmake -S . -B build && cmake --build build
+test/run_sim_test.sh build extern/dlls
+```
+
+### Status
+
+Everything was derived from the DLLs and checked against the simulator, but
+not yet on real hardware. The one detail that could not be proven from the
+DLLs alone is the bit order of the CRC-4/CRC-7 frame checksums (they are
+computed in libacc.dll); the driver tries both and logs a warning if the
+board uses the non-default one.
+
+You are more than welcome to take the matter to your own hands and contribute back!

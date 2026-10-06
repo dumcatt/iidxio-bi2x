@@ -1,0 +1,4407 @@
+================================================================================
+DECOMPILATION OF: libaio-iob2_video.dll
+================================================================================
+
+--- EXPORTED SYMBOLS ---
+  EXPORT: Ordinal_5 @ 180001010
+  EXPORT: ~AIO_IOB2_BI2X_S36 @ 180001010
+  EXPORT: ??1AIO_IOB2_BI2X_S36@@MEAA@XZ @ 180001010
+  EXPORT: FirmPrgSetExFlags @ 180001030
+  EXPORT: Ordinal_27 @ 180001030
+  EXPORT: ?FirmPrgSetExFlags@AIO_IOB2_BI2X_S36@@MEAA_NPEAXAEBUFIRMINFO@AIO_NMGR_IOB@@_N@Z @ 180001030
+  EXPORT: GetDeviceStatus @ 180001260
+  EXPORT: Ordinal_28 @ 180001260
+  EXPORT: ?GetDeviceStatus@AIO_IOB2_BI2X_S36@@QEBAXAEAUDEVSTATUS@1@@Z @ 180001260
+  EXPORT: ControlIoPower @ 1800012d0
+  EXPORT: Ordinal_21 @ 1800012d0
+  EXPORT: ?ControlIoPower@AIO_IOB2_BI2X_S36@@QEAAX_N@Z @ 1800012d0
+  EXPORT: IoReset @ 180001340
+  EXPORT: Ordinal_32 @ 180001340
+  EXPORT: ?IoReset@AIO_IOB2_BI2X_S36@@QEAAXIPEBUPLYRIOSETTING@1@@Z @ 180001340
+  EXPORT: SetWatchDogTimer @ 1800014c0
+  EXPORT: Ordinal_53 @ 1800014c0
+  EXPORT: ?SetWatchDogTimer@AIO_IOB2_BI2X_S36@@QEAAXE@Z @ 1800014c0
+  EXPORT: ControlCoinBlocker @ 180001520
+  EXPORT: Ordinal_14 @ 180001520
+  EXPORT: ?ControlCoinBlocker@AIO_IOB2_BI2X_S36@@QEAAXI_N@Z @ 180001520
+  EXPORT: AddCounter @ 1800015b0
+  EXPORT: Ordinal_9 @ 1800015b0
+  EXPORT: ?AddCounter@AIO_IOB2_BI2X_S36@@QEAAXII@Z @ 1800015b0
+  EXPORT: SetStartLamp @ 180001620
+  EXPORT: Ordinal_42 @ 180001620
+  EXPORT: ?SetStartLamp@AIO_IOB2_BI2X_S36@@QEAAXI_N@Z @ 180001620
+  EXPORT: Set7SegPattern @ 1800016b0
+  EXPORT: Ordinal_36 @ 1800016b0
+  EXPORT: ?Set7SegPattern@AIO_IOB2_BI2X_S36@@QEAAXIIE@Z @ 1800016b0
+  EXPORT: ControlLift @ 1800017b0
+  EXPORT: Ordinal_22 @ 1800017b0
+  EXPORT: ?ControlLift@AIO_IOB2_BI2X_S36@@QEAAXIII@Z @ 1800017b0
+  EXPORT: ControlArm @ 180001880
+  EXPORT: Ordinal_13 @ 180001880
+  EXPORT: ?ControlArm@AIO_IOB2_BI2X_S36@@QEAAXIII@Z @ 180001880
+  EXPORT: ControlField @ 180001950
+  EXPORT: Ordinal_19 @ 180001950
+  EXPORT: ?ControlField@AIO_IOB2_BI2X_S36@@QEAAX_N@Z @ 180001950
+  EXPORT: SetTapeLedData @ 1800019d0
+  EXPORT: Ordinal_45 @ 1800019d0
+  EXPORT: ?SetTapeLedData@AIO_IOB2_BI2X_S36@@QEAAXIPEBX@Z @ 1800019d0
+  EXPORT: ControlFreezer @ 180001af0
+  EXPORT: Ordinal_20 @ 180001af0
+  EXPORT: ?ControlFreezer@AIO_IOB2_BI2X_S36@@QEAAXIEPEBUFREEZERSETTING@1@@Z @ 180001af0
+  EXPORT: aioIob2Bi2xS36_GetDeviceStatus @ 1800020c0
+  EXPORT: Ordinal_65 @ 1800020c0
+  EXPORT: aioIob2Bi2xS36_ControlIoPower @ 180002180
+  EXPORT: Ordinal_62 @ 180002180
+  EXPORT: aioIob2Bi2xS36_IoReset @ 1800021e0
+  EXPORT: Ordinal_66 @ 1800021e0
+  EXPORT: aioIob2Bi2xS36_SetWatchDogTimer @ 180002210
+  EXPORT: Ordinal_70 @ 180002210
+  EXPORT: aioIob2Bi2xS36_ControlCoinBlocker @ 180002260
+  EXPORT: Ordinal_59 @ 180002260
+  EXPORT: aioIob2Bi2xS36_AddCounter @ 1800022e0
+  EXPORT: Ordinal_57 @ 1800022e0
+  EXPORT: aioIob2Bi2xS36_SetStartLamp @ 180002350
+  EXPORT: Ordinal_68 @ 180002350
+  EXPORT: aioIob2Bi2xS36_Set7SegPattern @ 1800023d0
+  EXPORT: Ordinal_67 @ 1800023d0
+  EXPORT: aioIob2Bi2xS36_ControlLift @ 1800023f0
+  EXPORT: Ordinal_63 @ 1800023f0
+  EXPORT: aioIob2Bi2xS36_ControlArm @ 1800024b0
+  EXPORT: Ordinal_58 @ 1800024b0
+  EXPORT: aioIob2Bi2xS36_ControlField @ 180002570
+  EXPORT: Ordinal_60 @ 180002570
+  EXPORT: aioIob2Bi2xS36_SetTapeLedData @ 1800025e0
+  EXPORT: Ordinal_69 @ 1800025e0
+  EXPORT: aioIob2Bi2xS36_ControlFreezer @ 180002600
+  EXPORT: Ordinal_61 @ 180002600
+  EXPORT: AIO_IOB2_BI2X_S36 @ 180002630
+  EXPORT: Ordinal_1 @ 180002630
+  EXPORT: ??0AIO_IOB2_BI2X_S36@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 180002630
+  EXPORT: Create @ 180002900
+  EXPORT: Ordinal_23 @ 180002900
+  EXPORT: ?Create@AIO_IOB2_BI2X_S36@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 180002900
+  EXPORT: aioIob2Bi2xS36_Create @ 1800042a0
+  EXPORT: Ordinal_64 @ 1800042a0
+  EXPORT: Ordinal_6 @ 180004850
+  EXPORT: ~AIO_IOB2_BI2X_SA1 @ 180004850
+  EXPORT: ??1AIO_IOB2_BI2X_SA1@@MEAA@XZ @ 180004850
+  EXPORT: AIO_IOB2_BI2X_SA1 @ 180004a70
+  EXPORT: Ordinal_2 @ 180004a70
+  EXPORT: ??0AIO_IOB2_BI2X_SA1@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 180004a70
+  EXPORT: Create @ 180004c90
+  EXPORT: Ordinal_24 @ 180004c90
+  EXPORT: ?Create@AIO_IOB2_BI2X_SA1@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 180004c90
+  EXPORT: GetDeviceStatus @ 180004da0
+  EXPORT: Ordinal_29 @ 180004da0
+  EXPORT: ?GetDeviceStatus@AIO_IOB2_BI2X_SA1@@QEBAXAEAUDEVSTATUS@1@@Z @ 180004da0
+  EXPORT: IoReset @ 180004e10
+  EXPORT: Ordinal_33 @ 180004e10
+  EXPORT: ?IoReset@AIO_IOB2_BI2X_SA1@@QEAAXI@Z @ 180004e10
+  EXPORT: ControlCoinBlocker @ 180004eb0
+  EXPORT: Ordinal_15 @ 180004eb0
+  EXPORT: ?ControlCoinBlocker@AIO_IOB2_BI2X_SA1@@QEAAXI_N@Z @ 180004eb0
+  EXPORT: AddCounter @ 180004f40
+  EXPORT: Ordinal_10 @ 180004f40
+  EXPORT: ?AddCounter@AIO_IOB2_BI2X_SA1@@QEAAXII@Z @ 180004f40
+  EXPORT: SetStartLamp @ 180004fd0
+  EXPORT: Ordinal_43 @ 180004fd0
+  EXPORT: ?SetStartLamp@AIO_IOB2_BI2X_SA1@@QEAAXI_N@Z @ 180004fd0
+  EXPORT: ControlConveyor @ 180005060
+  EXPORT: Ordinal_18 @ 180005060
+  EXPORT: ?ControlConveyor@AIO_IOB2_BI2X_SA1@@QEAAXIIGE@Z @ 180005060
+  EXPORT: SetTapeLedData @ 1800054f0
+  EXPORT: Ordinal_46 @ 1800054f0
+  EXPORT: ?SetTapeLedData@AIO_IOB2_BI2X_SA1@@QEAAXIPEBX@Z @ 1800054f0
+  EXPORT: aioIob2Bi2xSA1_GetDeviceStatus @ 180005990
+  EXPORT: Ordinal_75 @ 180005990
+  EXPORT: aioIob2Bi2xSA1_IoReset @ 180005a50
+  EXPORT: Ordinal_76 @ 180005a50
+  EXPORT: aioIob2Bi2xSA1_ControlCoinBlocker @ 180005af0
+  EXPORT: Ordinal_72 @ 180005af0
+  EXPORT: aioIob2Bi2xSA1_AddCounter @ 180005b70
+  EXPORT: Ordinal_71 @ 180005b70
+  EXPORT: aioIob2Bi2xSA1_SetStartLamp @ 180005c00
+  EXPORT: Ordinal_77 @ 180005c00
+  EXPORT: aioIob2Bi2xSA1_ControlConveyor @ 180005c80
+  EXPORT: Ordinal_73 @ 180005c80
+  EXPORT: aioIob2Bi2xSA1_SetTapeLedData @ 180005cb0
+  EXPORT: Ordinal_78 @ 180005cb0
+  EXPORT: aioIob2Bi2xSA1_Create @ 1800075c0
+  EXPORT: Ordinal_74 @ 1800075c0
+  EXPORT: Ordinal_7 @ 180007980
+  EXPORT: ~AIO_IOB2_BI2X_TCS @ 180007980
+  EXPORT: ??1AIO_IOB2_BI2X_TCS@@MEAA@XZ @ 180007980
+  EXPORT: AIO_IOB2_BI2X_TCS @ 180007ba0
+  EXPORT: Ordinal_3 @ 180007ba0
+  EXPORT: ??0AIO_IOB2_BI2X_TCS@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 180007ba0
+  EXPORT: Create @ 180007d10
+  EXPORT: Ordinal_25 @ 180007d10
+  EXPORT: ?Create@AIO_IOB2_BI2X_TCS@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 180007d10
+  EXPORT: GetDeviceStatus @ 180007e20
+  EXPORT: Ordinal_30 @ 180007e20
+  EXPORT: ?GetDeviceStatus@AIO_IOB2_BI2X_TCS@@QEBAXAEAUDEVSTATUS@1@@Z @ 180007e20
+  EXPORT: IoReset @ 180008130
+  EXPORT: Ordinal_34 @ 180008130
+  EXPORT: ?IoReset@AIO_IOB2_BI2X_TCS@@QEAAXI@Z @ 180008130
+  EXPORT: SetWatchDogTimer @ 1800081d0
+  EXPORT: Ordinal_54 @ 1800081d0
+  EXPORT: ?SetWatchDogTimer@AIO_IOB2_BI2X_TCS@@QEAAXE@Z @ 1800081d0
+  EXPORT: ControlCoinBlocker @ 180008230
+  EXPORT: Ordinal_16 @ 180008230
+  EXPORT: ?ControlCoinBlocker@AIO_IOB2_BI2X_TCS@@QEAAXI_N@Z @ 180008230
+  EXPORT: AddCounter @ 1800082a0
+  EXPORT: Ordinal_11 @ 1800082a0
+  EXPORT: ?AddCounter@AIO_IOB2_BI2X_TCS@@QEAAXII@Z @ 1800082a0
+  EXPORT: SetPhotoLight @ 180008310
+  EXPORT: Ordinal_40 @ 180008310
+  EXPORT: ?SetPhotoLight@AIO_IOB2_BI2X_TCS@@QEAAX_N@Z @ 180008310
+  EXPORT: SetIccrLed @ 180008370
+  EXPORT: Ordinal_38 @ 180008370
+  EXPORT: ?SetIccrLed@AIO_IOB2_BI2X_TCS@@QEAAXI@Z @ 180008370
+  EXPORT: SetTapeLedData @ 180008410
+  EXPORT: Ordinal_47 @ 180008410
+  EXPORT: ?SetTapeLedData@AIO_IOB2_BI2X_TCS@@QEAAXIPEBX@Z @ 180008410
+  EXPORT: aioIob2Bi2xTCS_GetDeviceStatus @ 180008870
+  EXPORT: Ordinal_82 @ 180008870
+  EXPORT: aioIob2Bi2xTCS_IoReset @ 180008940
+  EXPORT: Ordinal_83 @ 180008940
+  EXPORT: aioIob2Bi2xTCS_SetWatchDogTimer @ 1800089e0
+  EXPORT: Ordinal_87 @ 1800089e0
+  EXPORT: aioIob2Bi2xTCS_ControlCoinBlocker @ 180008a30
+  EXPORT: Ordinal_80 @ 180008a30
+  EXPORT: aioIob2Bi2xTCS_AddCounter @ 180008aa0
+  EXPORT: Ordinal_79 @ 180008aa0
+  EXPORT: aioIob2Bi2xTCS_SetPhotoLight @ 180008b00
+  EXPORT: Ordinal_85 @ 180008b00
+  EXPORT: aioIob2Bi2xTCS_SetIccrLed @ 180008b60
+  EXPORT: Ordinal_84 @ 180008b60
+  EXPORT: aioIob2Bi2xTCS_SetTapeLedData @ 180008c00
+  EXPORT: Ordinal_86 @ 180008c00
+  EXPORT: aioIob2Bi2xTCS_Create @ 180009c90
+  EXPORT: Ordinal_81 @ 180009c90
+  EXPORT: Ordinal_8 @ 18000a050
+  EXPORT: ~AIO_IOB2_BI2X_TDJ @ 18000a050
+  EXPORT: ??1AIO_IOB2_BI2X_TDJ@@MEAA@XZ @ 18000a050
+  EXPORT: AIO_IOB2_BI2X_TDJ @ 18000a270
+  EXPORT: Ordinal_4 @ 18000a270
+  EXPORT: ??0AIO_IOB2_BI2X_TDJ@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 18000a270
+  EXPORT: Create @ 18000a440
+  EXPORT: Ordinal_26 @ 18000a440
+  EXPORT: ?Create@AIO_IOB2_BI2X_TDJ@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z @ 18000a440
+  EXPORT: GetDeviceStatus @ 18000a550
+  EXPORT: Ordinal_31 @ 18000a550
+  EXPORT: ?GetDeviceStatus@AIO_IOB2_BI2X_TDJ@@QEBAXAEAUDEVSTATUS@1@@Z @ 18000a550
+  EXPORT: IoReset @ 18000aac0
+  EXPORT: Ordinal_35 @ 18000aac0
+  EXPORT: ?IoReset@AIO_IOB2_BI2X_TDJ@@QEAAXI@Z @ 18000aac0
+  EXPORT: SetWatchDogTimer @ 18000ab60
+  EXPORT: Ordinal_55 @ 18000ab60
+  EXPORT: ?SetWatchDogTimer@AIO_IOB2_BI2X_TDJ@@QEAAXE@Z @ 18000ab60
+  EXPORT: ControlCoinBlocker @ 18000abc0
+  EXPORT: Ordinal_17 @ 18000abc0
+  EXPORT: ?ControlCoinBlocker@AIO_IOB2_BI2X_TDJ@@QEAAXI_N@Z @ 18000abc0
+  EXPORT: AddCounter @ 18000ac30
+  EXPORT: Ordinal_12 @ 18000ac30
+  EXPORT: ?AddCounter@AIO_IOB2_BI2X_TDJ@@QEAAXII@Z @ 18000ac30
+  EXPORT: SetStartLamp @ 18000aca0
+  EXPORT: Ordinal_44 @ 18000aca0
+  EXPORT: ?SetStartLamp@AIO_IOB2_BI2X_TDJ@@QEAAXI_N@Z @ 18000aca0
+  EXPORT: SetVefxButtonLamp @ 18000ad30
+  EXPORT: Ordinal_52 @ 18000ad30
+  EXPORT: ?SetVefxButtonLamp@AIO_IOB2_BI2X_TDJ@@QEAAX_N@Z @ 18000ad30
+  EXPORT: SetEffectButtonLamp @ 18000ad90
+  EXPORT: Ordinal_37 @ 18000ad90
+  EXPORT: ?SetEffectButtonLamp@AIO_IOB2_BI2X_TDJ@@QEAAX_N@Z @ 18000ad90
+  EXPORT: SetPlayerButtonLamp @ 18000adf0
+  EXPORT: Ordinal_41 @ 18000adf0
+  EXPORT: ?SetPlayerButtonLamp@AIO_IOB2_BI2X_TDJ@@QEAAXII_N@Z @ 18000adf0
+  EXPORT: SetWooferLed @ 18000aff0
+  EXPORT: Ordinal_56 @ 18000aff0
+  EXPORT: ?SetWooferLed@AIO_IOB2_BI2X_TDJ@@QEAAXI@Z @ 18000aff0
+  EXPORT: SetIccrLed @ 18000b090
+  EXPORT: Ordinal_39 @ 18000b090
+  EXPORT: ?SetIccrLed@AIO_IOB2_BI2X_TDJ@@QEAAXII@Z @ 18000b090
+  EXPORT: SetTurnTableLed @ 18000b1a0
+  EXPORT: Ordinal_50 @ 18000b1a0
+  EXPORT: ?SetTurnTableLed@AIO_IOB2_BI2X_TDJ@@QEAAXII@Z @ 18000b1a0
+  EXPORT: SetTurnTableResist @ 18000b2b0
+  EXPORT: Ordinal_51 @ 18000b2b0
+  EXPORT: ?SetTurnTableResist@AIO_IOB2_BI2X_TDJ@@QEAAXIE@Z @ 18000b2b0
+  EXPORT: SetTapeLedDataLimit @ 18000b320
+  EXPORT: Ordinal_49 @ 18000b320
+  EXPORT: ?SetTapeLedDataLimit@AIO_IOB2_BI2X_TDJ@@QEAAXEE@Z @ 18000b320
+  EXPORT: SetTapeLedData @ 18000b390
+  EXPORT: Ordinal_48 @ 18000b390
+  EXPORT: ?SetTapeLedData@AIO_IOB2_BI2X_TDJ@@QEAAXIPEBX@Z @ 18000b390
+  EXPORT: aioIob2Bi2xTDJ_GetDeviceStatus @ 18000b860
+  EXPORT: Ordinal_91 @ 18000b860
+  EXPORT: aioIob2Bi2xTDJ_IoReset @ 18000b920
+  EXPORT: Ordinal_92 @ 18000b920
+  EXPORT: aioIob2Bi2xTDJ_SetWatchDogTimer @ 18000b9c0
+  EXPORT: Ordinal_102 @ 18000b9c0
+  EXPORT: aioIob2Bi2xTDJ_ControlCoinBlocker @ 18000ba10
+  EXPORT: Ordinal_89 @ 18000ba10
+  EXPORT: aioIob2Bi2xTDJ_AddCounter @ 18000ba80
+  EXPORT: Ordinal_88 @ 18000ba80
+  EXPORT: aioIob2Bi2xTDJ_SetStartLamp @ 18000bae0
+  EXPORT: Ordinal_96 @ 18000bae0
+  EXPORT: aioIob2Bi2xTDJ_SetVefxButtonLamp @ 18000bb60
+  EXPORT: Ordinal_101 @ 18000bb60
+  EXPORT: aioIob2Bi2xTDJ_SetEffectButtonLamp @ 18000bbc0
+  EXPORT: Ordinal_93 @ 18000bbc0
+  EXPORT: aioIob2Bi2xTDJ_SetPlayerButtonLamp @ 18000bc20
+  EXPORT: Ordinal_95 @ 18000bc20
+  EXPORT: aioIob2Bi2xTDJ_SetWooferLed @ 18000bc40
+  EXPORT: Ordinal_103 @ 18000bc40
+  EXPORT: aioIob2Bi2xTDJ_SetIccrLed @ 18000bce0
+  EXPORT: Ordinal_94 @ 18000bce0
+  EXPORT: aioIob2Bi2xTDJ_SetTurnTableLed @ 18000bd00
+  EXPORT: Ordinal_99 @ 18000bd00
+  EXPORT: aioIob2Bi2xTDJ_SetTurnTableResist @ 18000bd20
+  EXPORT: Ordinal_100 @ 18000bd20
+  EXPORT: aioIob2Bi2xTDJ_SetTapeLedDataLimit @ 18000bd90
+  EXPORT: Ordinal_98 @ 18000bd90
+  EXPORT: aioIob2Bi2xTDJ_SetTapeLedData @ 18000bdf0
+  EXPORT: Ordinal_97 @ 18000bdf0
+  EXPORT: aioIob2Bi2xTDJ_Create @ 18000ce80
+  EXPORT: Ordinal_90 @ 18000ce80
+  EXPORT: entry @ 18000e570
+
+--- [EXPORT] ~AIO_IOB2_BI2X_S36 @ 180001010 ---
+
+/* protected: virtual __cdecl AIO_IOB2_BI2X_S36::~AIO_IOB2_BI2X_S36(void) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::~AIO_IOB2_BI2X_S36(AIO_IOB2_BI2X_S36 *this)
+
+{
+                    /* 0x1010  5  ??1AIO_IOB2_BI2X_S36@@MEAA@XZ */
+  *(undefined ***)this = vftable;
+  AIO_IOB2_BI2X::~AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this);
+  return;
+}
+
+
+
+--- [EXPORT] FirmPrgSetExFlags @ 180001030 ---
+
+/* protected: virtual bool __cdecl AIO_IOB2_BI2X_S36::FirmPrgSetExFlags(void * __ptr64,struct
+   AIO_NMGR_IOB::FIRMINFO const & __ptr64,bool) __ptr64 */
+
+bool __thiscall
+AIO_IOB2_BI2X_S36::FirmPrgSetExFlags
+          (AIO_IOB2_BI2X_S36 *this,void *param_1,FIRMINFO *param_2,bool param_3)
+
+{
+  bool bVar1;
+  
+                    /* 0x1030  27
+                       ?FirmPrgSetExFlags@AIO_IOB2_BI2X_S36@@MEAA_NPEAXAEBUFIRMINFO@AIO_NMGR_IOB@@_N@Z
+                        */
+  bVar1 = AIO_IOB2_BI2X::FirmPrgSetBootModule
+                    ((AIO_IOB2_BI2X *)this,param_1,param_2,param_3,&DAT_18001d580,0x1ab8);
+  return bVar1;
+}
+
+
+
+--- [EXPORT] GetDeviceStatus @ 180001260 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::GetDeviceStatus(struct AIO_IOB2_BI2X_S36::DEVSTATUS &
+   __ptr64)const __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::GetDeviceStatus(AIO_IOB2_BI2X_S36 *this,DEVSTATUS *param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x1260  28  ?GetDeviceStatus@AIO_IOB2_BI2X_S36@@QEBAXAEAUDEVSTATUS@1@@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  memcpy(param_1,this + 0x3e0,0xb2);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlIoPower @ 1800012d0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::ControlIoPower(bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::ControlIoPower(AIO_IOB2_BI2X_S36 *this,bool param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x12d0  21  ?ControlIoPower@AIO_IOB2_BI2X_S36@@QEAAX_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] & 0x7f);
+  this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] | !param_1 << 7);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] IoReset @ 180001340 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::IoReset(unsigned int,struct
+   AIO_IOB2_BI2X_S36::PLYRIOSETTING const * __ptr64) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::IoReset(AIO_IOB2_BI2X_S36 *this,uint param_1,PLYRIOSETTING *param_2)
+
+{
+  AIO_IOB2_BI2X_S36 AVar1;
+  AIO_IOB2_BI2X_S36 *pAVar2;
+  uint uVar3;
+  AIO_IOB2_BI2X_S36 *pAVar4;
+  longlong lVar5;
+  longlong lVar6;
+  char cVar7;
+  
+                    /* 0x1340  32  ?IoReset@AIO_IOB2_BI2X_S36@@QEAAXIPEBUPLYRIOSETTING@1@@Z */
+  cVar7 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar7 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar7 = '\x01';
+  }
+  pAVar2 = this + 0x4a7;
+  uVar3 = 0;
+  lVar5 = 4;
+  if (pAVar2 != (AIO_IOB2_BI2X_S36 *)0x0) {
+    lVar6 = 4;
+    pAVar4 = pAVar2;
+    do {
+      AVar1 = *pAVar4;
+      pAVar4 = pAVar4 + 1;
+      uVar3 = uVar3 << 8 | (uint)(byte)AVar1;
+      lVar6 = lVar6 + -1;
+    } while (lVar6 != 0);
+    if (pAVar2 != (AIO_IOB2_BI2X_S36 *)0x0) {
+      pAVar2 = this + 0x4ab;
+      uVar3 = uVar3 | param_1;
+      do {
+        pAVar2 = pAVar2 + -1;
+        *pAVar2 = SUB41(uVar3,0);
+        uVar3 = uVar3 >> 8;
+        lVar5 = lVar5 + -1;
+      } while (lVar5 != 0);
+    }
+  }
+  if (param_2 != (PLYRIOSETTING *)0x0) {
+    *(undefined4 *)(this + 0x42a) = *(undefined4 *)param_2;
+    *(undefined2 *)(this + 0x42e) = *(undefined2 *)(param_2 + 4);
+    this[0x430] = *(AIO_IOB2_BI2X_S36 *)(param_2 + 6);
+  }
+  this[0x4ab] = (AIO_IOB2_BI2X_S36)
+                ((byte)this[0x4ab] ^ ((byte)this[0x42a] ^ (byte)this[0x4ab]) & 0x1f);
+  this[0x4ab] = (AIO_IOB2_BI2X_S36)((char)this[0x42b] << 5 | (byte)this[0x4ab] & 0x1f);
+  this[0x4ad] = (AIO_IOB2_BI2X_S36)
+                ((byte)this[0x4ad] ^ ((byte)this[0x42c] ^ (byte)this[0x4ad]) & 0xf);
+  this[0x4ac] = (AIO_IOB2_BI2X_S36)
+                ((byte)this[0x4ac] ^ ((byte)this[0x42d] ^ (byte)this[0x4ac]) & 0x1f);
+  this[0x4ac] = (AIO_IOB2_BI2X_S36)((char)this[0x42e] << 5 | (byte)this[0x4ac] & 0x1f);
+  this[0x4ad] = (AIO_IOB2_BI2X_S36)((char)this[0x42f] << 4 | (byte)this[0x4ad] & 0xf);
+  this[0x4c0] = (AIO_IOB2_BI2X_S36)0x1;
+  this[0x4ae] = (AIO_IOB2_BI2X_S36)
+                ((byte)this[0x4ae] ^ ((byte)this[0x430] ^ (byte)this[0x4ae]) & 0x3f);
+  if ('\0' < cVar7) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetWatchDogTimer @ 1800014c0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::SetWatchDogTimer(unsigned char) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::SetWatchDogTimer(AIO_IOB2_BI2X_S36 *this,uchar param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x14c0  53  ?SetWatchDogTimer@AIO_IOB2_BI2X_S36@@QEAAXE@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0x4a6] = (AIO_IOB2_BI2X_S36)param_1;
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlCoinBlocker @ 180001520 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::ControlCoinBlocker(unsigned int,bool) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::ControlCoinBlocker(AIO_IOB2_BI2X_S36 *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+                    /* 0x1520  14  ?ControlCoinBlocker@AIO_IOB2_BI2X_S36@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] & 0xfb);
+    bVar2 = param_2 << 2;
+  }
+  else {
+    if (param_1 != 1) goto LAB_18000157e;
+    this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] & 0xf7);
+    bVar2 = param_2 << 3;
+  }
+  this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] | bVar2);
+LAB_18000157e:
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] AddCounter @ 1800015b0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::AddCounter(unsigned int,unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::AddCounter(AIO_IOB2_BI2X_S36 *this,uint param_1,uint param_2)
+
+{
+  char cVar1;
+  
+                    /* 0x15b0  9  ?AddCounter@AIO_IOB2_BI2X_S36@@QEAAXII@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0x493] = (AIO_IOB2_BI2X_S36)((char)this[0x493] + (char)param_2);
+  }
+  else if (param_1 == 1) {
+    this[0x494] = (AIO_IOB2_BI2X_S36)((char)this[0x494] + (char)param_2);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetStartLamp @ 180001620 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::SetStartLamp(unsigned int,bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::SetStartLamp(AIO_IOB2_BI2X_S36 *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  
+                    /* 0x1620  42  ?SetStartLamp@AIO_IOB2_BI2X_S36@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] & 0xfe);
+  }
+  else {
+    if (param_1 != 1) goto LAB_180001679;
+    this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] & 0xfd);
+    param_2 = (bool)(param_2 * '\x02');
+  }
+  this[0x492] = (AIO_IOB2_BI2X_S36)((byte)this[0x492] | param_2);
+LAB_180001679:
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] Set7SegPattern @ 1800016b0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::Set7SegPattern(unsigned int,unsigned int,unsigned char)
+   __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::Set7SegPattern(AIO_IOB2_BI2X_S36 *this,uint param_1,uint param_2,uchar param_3)
+
+{
+  char cVar1;
+  
+                    /* 0x16b0  36  ?Set7SegPattern@AIO_IOB2_BI2X_S36@@QEAAXIIE@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    if (param_2 == 0) {
+      this[0x496] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 1) {
+      this[0x497] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 2) {
+      this[0x498] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 3) {
+      this[0x499] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 4) {
+      this[0x49a] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+  }
+  else if (param_1 == 1) {
+    if (param_2 == 0) {
+      this[0x49e] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 1) {
+      this[0x49f] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 2) {
+      this[0x4a0] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 3) {
+      this[0x4a1] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+    else if (param_2 == 4) {
+      this[0x4a2] = (AIO_IOB2_BI2X_S36)param_3;
+    }
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlLift @ 1800017b0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::ControlLift(unsigned int,unsigned int,unsigned int)
+   __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::ControlLift(AIO_IOB2_BI2X_S36 *this,uint param_1,uint param_2,uint param_3)
+
+{
+  char cVar1;
+  
+                    /* 0x17b0  22  ?ControlLift@AIO_IOB2_BI2X_S36@@QEAAXIII@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0x49d] = (AIO_IOB2_BI2X_S36)((byte)this[0x49d] & 0xf0);
+    this[0x49d] = (AIO_IOB2_BI2X_S36)((byte)this[0x49d] | (byte)param_3 & 0xf);
+    this[0x49b] = (AIO_IOB2_BI2X_S36)((char)this[0x49b] + 1U & 0xf | (char)param_2 << 4);
+  }
+  else if (param_1 == 1) {
+    this[0x4a5] = (AIO_IOB2_BI2X_S36)((byte)this[0x4a5] & 0xf0);
+    this[0x4a5] = (AIO_IOB2_BI2X_S36)((byte)this[0x4a5] | (byte)param_3 & 0xf);
+    this[0x4a3] = (AIO_IOB2_BI2X_S36)((char)this[0x4a3] + 1U & 0xf | (char)param_2 << 4);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlArm @ 180001880 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::ControlArm(unsigned int,unsigned int,unsigned int)
+   __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::ControlArm(AIO_IOB2_BI2X_S36 *this,uint param_1,uint param_2,uint param_3)
+
+{
+  char cVar1;
+  
+                    /* 0x1880  13  ?ControlArm@AIO_IOB2_BI2X_S36@@QEAAXIII@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0x49d] = (AIO_IOB2_BI2X_S36)((byte)this[0x49d] & 0xf);
+    this[0x49d] = (AIO_IOB2_BI2X_S36)((byte)this[0x49d] | (char)param_3 << 4);
+    this[0x49c] = (AIO_IOB2_BI2X_S36)((char)this[0x49c] + 1U & 0xf | (char)param_2 << 4);
+  }
+  else if (param_1 == 1) {
+    this[0x4a5] = (AIO_IOB2_BI2X_S36)((byte)this[0x4a5] & 0xf);
+    this[0x4a5] = (AIO_IOB2_BI2X_S36)((byte)this[0x4a5] | (char)param_3 << 4);
+    this[0x4a4] = (AIO_IOB2_BI2X_S36)((char)this[0x4a4] + 1U & 0xf | (char)param_2 << 4);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlField @ 180001950 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::ControlField(bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_S36::ControlField(AIO_IOB2_BI2X_S36 *this,bool param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x1950  19  ?ControlField@AIO_IOB2_BI2X_S36@@QEAAX_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0x495] = (AIO_IOB2_BI2X_S36)
+                ((char)this[0x495] + 1U & 0xf | param_1 << 4 | (byte)this[0x495] & 0xe0);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTapeLedData @ 1800019d0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::SetTapeLedData(unsigned int,void const * __ptr64) __ptr64
+    */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::SetTapeLedData(AIO_IOB2_BI2X_S36 *this,uint param_1,void *param_2)
+
+{
+  ushort uVar1;
+  char cVar2;
+  uint uVar3;
+  
+                    /* 0x19d0  45  ?SetTapeLedData@AIO_IOB2_BI2X_S36@@QEAAXIPEBX@Z */
+  if (param_1 < 4) {
+    uVar1 = *(ushort *)(&DAT_18002c130 + (ulonglong)param_1 * 4);
+    uVar3 = (uint)(ushort)(&DAT_18002c134)[(ulonglong)param_1 * 2] - (uint)uVar1;
+    cVar2 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+    if (cVar2 == '\0') {
+      AC_MUTEX::Lock((AC_MUTEX *)this);
+      cVar2 = '\x01';
+    }
+    if ((param_1 == 0) || (param_1 == 2)) {
+      AIO_IOB2_BI2X::SetTapeLedData
+                ((AIO_IOB2_BI2X *)this,(ushort *)(this + (ulonglong)uVar1 * 2 + 0x4c2),uVar3,param_2
+                 ,true);
+    }
+    else {
+      AIO_IOB2_BI2X::SetTapeLedData
+                ((AIO_IOB2_BI2X *)this,(ushort *)(this + (ulonglong)uVar1 * 2 + 0x4c2),uVar3,param_2
+                 ,false);
+    }
+    this[(ulonglong)(param_1 >> 3) + 0x57a] =
+         (AIO_IOB2_BI2X_S36)
+         ((byte)this[(ulonglong)(param_1 >> 3) + 0x57a] | '\x01' << ((byte)param_1 & 7));
+    if ('\0' < cVar2) {
+      AC_MUTEX::Unlock((AC_MUTEX *)this);
+    }
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlFreezer @ 180001af0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_S36::ControlFreezer(unsigned int,unsigned char,struct
+   AIO_IOB2_BI2X_S36::FREEZERSETTING const * __ptr64) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_S36::ControlFreezer
+          (AIO_IOB2_BI2X_S36 *this,uint param_1,uchar param_2,FREEZERSETTING *param_3)
+
+{
+  char cVar1;
+  
+                    /* 0x1af0  20  ?ControlFreezer@AIO_IOB2_BI2X_S36@@QEAAXIEPEBUFREEZERSETTING@1@@Z
+                        */
+  cVar1 = (this != (AIO_IOB2_BI2X_S36 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0x4af] = (AIO_IOB2_BI2X_S36)((byte)this[0x4af] & 0xf0);
+  this[0x4b0] = (AIO_IOB2_BI2X_S36)param_2;
+  this[0x4af] = (AIO_IOB2_BI2X_S36)((byte)this[0x4af] | (byte)param_1 & 0xf);
+  if (param_3 != (FREEZERSETTING *)0x0) {
+    *(undefined8 *)(this + 0x432) = *(undefined8 *)param_3;
+    *(undefined8 *)(this + 0x43a) = *(undefined8 *)(param_3 + 8);
+    *(undefined8 *)(this + 0x442) = *(undefined8 *)(param_3 + 0x10);
+    this[0x4b1] = SUB41(*(ushort *)(this + 0x432) / 5,0);
+    this[0x4b2] = this[0x434];
+    this[0x4b3] = this[0x435];
+    this[0x4b4] = this[0x436];
+    this[0x4b5] = this[0x437];
+    this[0x4b6] = this[0x438];
+    this[0x4b7] = this[0x439];
+    this[0x4b8] = SUB41((uint)*(ushort *)(this + 0x43a) * 10 >> 8,0);
+    this[0x4b9] = SUB21(*(short *)(this + 0x43c) >> 7,0);
+    this[0x4ba] = SUB21(*(short *)(this + 0x43e) >> 7,0);
+    this[0x4bb] = SUB21(*(short *)(this + 0x440) >> 7,0);
+    this[0x4bc] = SUB21(*(short *)(this + 0x442) >> 7,0);
+    this[0x4bd] = SUB21(*(short *)(this + 0x444) >> 7,0);
+    this[0x4be] = SUB21(*(short *)(this + 0x446) >> 7,0);
+    this[0x4af] = (AIO_IOB2_BI2X_S36)((byte)this[0x4af] | 0x80);
+    this[0x4bf] = SUB21(*(short *)(this + 0x448) >> 7,0);
+  }
+  this[0x4c1] = (AIO_IOB2_BI2X_S36)0x1;
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_GetDeviceStatus @ 1800020c0 ---
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void * aioIob2Bi2xS36_GetDeviceStatus(AC_MUTEX *param_1,__uint64 param_2,uint param_3)
+
+{
+  void *pvVar1;
+  uint *puVar2;
+  undefined1 auStack_118 [32];
+  uint local_f8;
+  uint local_f4 [3];
+  undefined1 local_e8 [192];
+  ulonglong local_28;
+  
+                    /* 0x20c0  65  aioIob2Bi2xS36_GetDeviceStatus */
+  local_28 = DAT_18002c2f0 ^ (ulonglong)auStack_118;
+  if (param_1 == (AC_MUTEX *)0x0) {
+    pvVar1 = (void *)0x0;
+  }
+  else {
+    local_f4[0] = param_3;
+    AC_MUTEX::Lock(param_1);
+    memcpy(local_e8,param_1 + 0x3e0,0xb2);
+    AC_MUTEX::Unlock(param_1);
+    local_f8 = 0xb2;
+    puVar2 = local_f4;
+    if (0xb1 < param_3) {
+      puVar2 = &local_f8;
+    }
+    pvVar1 = (void *)(ulonglong)*puVar2;
+    AC_MEMORY::Copy(&local_f8,param_2,pvVar1);
+  }
+  return pvVar1;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_ControlIoPower @ 180002180 ---
+
+void aioIob2Bi2xS36_ControlIoPower(AC_MUTEX *param_1,char param_2)
+
+{
+                    /* 0x2180  62  aioIob2Bi2xS36_ControlIoPower */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] & 0x7f);
+    param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] | (param_2 == '\0') << 7);
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_IoReset @ 1800021e0 ---
+
+void aioIob2Bi2xS36_IoReset
+               (AIO_IOB2_BI2X_S36 *param_1,uint param_2,PLYRIOSETTING *param_3,int param_4)
+
+{
+  PLYRIOSETTING *pPVar1;
+  
+                    /* 0x21e0  66  aioIob2Bi2xS36_IoReset */
+  if (param_1 != (AIO_IOB2_BI2X_S36 *)0x0) {
+    pPVar1 = (PLYRIOSETTING *)0x0;
+    if ((param_3 != (PLYRIOSETTING *)0x0) && (param_4 == 7)) {
+      pPVar1 = param_3;
+    }
+    AIO_IOB2_BI2X_S36::IoReset(param_1,param_2,pPVar1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_SetWatchDogTimer @ 180002210 ---
+
+void aioIob2Bi2xS36_SetWatchDogTimer(AC_MUTEX *param_1,AC_MUTEX param_2)
+
+{
+                    /* 0x2210  70  aioIob2Bi2xS36_SetWatchDogTimer */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0x4a6] = param_2;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_ControlCoinBlocker @ 180002260 ---
+
+void aioIob2Bi2xS36_ControlCoinBlocker(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+                    /* 0x2260  59  aioIob2Bi2xS36_ControlCoinBlocker */
+  if (param_1 == (AC_MUTEX *)0x0) {
+    return;
+  }
+  AC_MUTEX::Lock(param_1);
+  if (param_2 == 0) {
+    param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] & 0xfb);
+    bVar1 = (param_3 & 1) << 2;
+  }
+  else {
+    if (param_2 != 1) goto LAB_1800022b7;
+    param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] & 0xf7);
+    bVar1 = (param_3 & 1) << 3;
+  }
+  param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] | bVar1);
+LAB_1800022b7:
+  AC_MUTEX::Unlock(param_1);
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_AddCounter @ 1800022e0 ---
+
+void aioIob2Bi2xS36_AddCounter(AC_MUTEX *param_1,int param_2,char param_3)
+
+{
+                    /* 0x22e0  57  aioIob2Bi2xS36_AddCounter */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0x493] = (AC_MUTEX)((char)param_1[0x493] + param_3);
+    }
+    else if (param_2 == 1) {
+      param_1[0x494] = (AC_MUTEX)((char)param_1[0x494] + param_3);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_SetStartLamp @ 180002350 ---
+
+void aioIob2Bi2xS36_SetStartLamp(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+                    /* 0x2350  68  aioIob2Bi2xS36_SetStartLamp */
+  if (param_1 == (AC_MUTEX *)0x0) {
+    return;
+  }
+  AC_MUTEX::Lock(param_1);
+  if (param_2 == 0) {
+    param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] & 0xfe);
+    bVar1 = param_3 & 1;
+  }
+  else {
+    if (param_2 != 1) goto LAB_1800023a2;
+    param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] & 0xfd);
+    bVar1 = (param_3 & 1) * '\x02';
+  }
+  param_1[0x492] = (AC_MUTEX)((byte)param_1[0x492] | bVar1);
+LAB_1800023a2:
+  AC_MUTEX::Unlock(param_1);
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_Set7SegPattern @ 1800023d0 ---
+
+void aioIob2Bi2xS36_Set7SegPattern
+               (AIO_IOB2_BI2X_S36 *param_1,uint param_2,uint param_3,uchar param_4)
+
+{
+                    /* 0x23d0  67  aioIob2Bi2xS36_Set7SegPattern */
+  if (param_1 != (AIO_IOB2_BI2X_S36 *)0x0) {
+    AIO_IOB2_BI2X_S36::Set7SegPattern(param_1,param_2,param_3,param_4);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_ControlLift @ 1800023f0 ---
+
+void aioIob2Bi2xS36_ControlLift(AC_MUTEX *param_1,int param_2,char param_3,byte param_4)
+
+{
+                    /* 0x23f0  63  aioIob2Bi2xS36_ControlLift */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0x49d] = (AC_MUTEX)((byte)param_1[0x49d] & 0xf0);
+      param_1[0x49d] = (AC_MUTEX)((byte)param_1[0x49d] | param_4 & 0xf);
+      param_1[0x49b] = (AC_MUTEX)((char)param_1[0x49b] + 1U & 0xf | param_3 << 4);
+    }
+    else if (param_2 == 1) {
+      param_1[0x4a5] = (AC_MUTEX)((byte)param_1[0x4a5] & 0xf0);
+      param_1[0x4a5] = (AC_MUTEX)((byte)param_1[0x4a5] | param_4 & 0xf);
+      param_1[0x4a3] = (AC_MUTEX)((char)param_1[0x4a3] + 1U & 0xf | param_3 << 4);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_ControlArm @ 1800024b0 ---
+
+void aioIob2Bi2xS36_ControlArm(AC_MUTEX *param_1,int param_2,char param_3,char param_4)
+
+{
+                    /* 0x24b0  58  aioIob2Bi2xS36_ControlArm */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0x49d] = (AC_MUTEX)((byte)param_1[0x49d] & 0xf);
+      param_1[0x49d] = (AC_MUTEX)((byte)param_1[0x49d] | param_4 << 4);
+      param_1[0x49c] = (AC_MUTEX)((char)param_1[0x49c] + 1U & 0xf | param_3 << 4);
+    }
+    else if (param_2 == 1) {
+      param_1[0x4a5] = (AC_MUTEX)((byte)param_1[0x4a5] & 0xf);
+      param_1[0x4a5] = (AC_MUTEX)((byte)param_1[0x4a5] | param_4 << 4);
+      param_1[0x4a4] = (AC_MUTEX)((char)param_1[0x4a4] + 1U & 0xf | param_3 << 4);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_ControlField @ 180002570 ---
+
+void aioIob2Bi2xS36_ControlField(AC_MUTEX *param_1,byte param_2)
+
+{
+                    /* 0x2570  60  aioIob2Bi2xS36_ControlField */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0x495] =
+         (AC_MUTEX)
+         ((char)param_1[0x495] + 1U & 0xf | (param_2 & 1) << 4 | (byte)param_1[0x495] & 0xe0);
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_SetTapeLedData @ 1800025e0 ---
+
+void aioIob2Bi2xS36_SetTapeLedData(AIO_IOB2_BI2X_S36 *param_1,uint param_2,void *param_3)
+
+{
+                    /* 0x25e0  69  aioIob2Bi2xS36_SetTapeLedData */
+  if (param_1 != (AIO_IOB2_BI2X_S36 *)0x0) {
+    AIO_IOB2_BI2X_S36::SetTapeLedData(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_ControlFreezer @ 180002600 ---
+
+void aioIob2Bi2xS36_ControlFreezer
+               (AIO_IOB2_BI2X_S36 *param_1,uint param_2,uchar param_3,FREEZERSETTING *param_4,
+               int param_5)
+
+{
+  FREEZERSETTING *pFVar1;
+  
+                    /* 0x2600  61  aioIob2Bi2xS36_ControlFreezer */
+  if (param_1 != (AIO_IOB2_BI2X_S36 *)0x0) {
+    pFVar1 = (FREEZERSETTING *)0x0;
+    if ((param_4 != (FREEZERSETTING *)0x0) && (param_5 == 0x18)) {
+      pFVar1 = param_4;
+    }
+    AIO_IOB2_BI2X_S36::ControlFreezer(param_1,param_2,param_3,pFVar1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] AIO_IOB2_BI2X_S36 @ 180002630 ---
+
+/* protected: __cdecl AIO_IOB2_BI2X_S36::AIO_IOB2_BI2X_S36(class AC_HANDLE_T<class AIO_NMGR_IOB2>
+   const & __ptr64,unsigned char) __ptr64 */
+
+AIO_IOB2_BI2X_S36 * __thiscall
+AIO_IOB2_BI2X_S36::AIO_IOB2_BI2X_S36
+          (AIO_IOB2_BI2X_S36 *this,AC_HANDLE_T<AIO_NMGR_IOB2> *param_1,uchar param_2)
+
+{
+  short *psVar1;
+  short local_res10 [4];
+  undefined4 local_res20 [2];
+  undefined1 local_38 [4];
+  undefined1 local_34 [4];
+  undefined1 local_30 [4];
+  undefined1 local_2c [4];
+  undefined1 local_28 [8];
+  AIO_IOB2_BI2X_S36 *local_20;
+  undefined8 local_18;
+  
+                    /* 0x2630  1  ??0AIO_IOB2_BI2X_S36@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_18 = 0xfffffffffffffffe;
+  AIO_IOB2_BI2X::AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this,(AC_HANDLE_T<AIO_NMGR_IOB> *)param_1,param_2);
+  *(undefined ***)this = vftable;
+  this[0x580] = (AIO_IOB2_BI2X_S36)0x0;
+  this[0x581] = (AIO_IOB2_BI2X_S36)0x0;
+  this[0xf0] = (AIO_IOB2_BI2X_S36)0x1;
+  this[0xf1] = (AIO_IOB2_BI2X_S36)0x0;
+  this[0xf2] = (AIO_IOB2_BI2X_S36)((byte)this[0xf2] | 1);
+  this[0xf3] = (AIO_IOB2_BI2X_S36)((byte)this[0xf3] | 0xf);
+  AC_MEMORY::Fill(local_38,(__uint64)(this + 0x170),'8');
+  AC_MEMORY::Fill(local_34,(__uint64)(this + 0x2a8),'8');
+  AC_MEMORY::Fill(local_30,(__uint64)(this + 0x3e0),0x9c);
+  AC_MEMORY::Fill(local_2c,(__uint64)(this + 0x57c),'\x04');
+  this[0x42a] = (AIO_IOB2_BI2X_S36)0xa;
+  this[0x42b] = (AIO_IOB2_BI2X_S36)0x2;
+  this[0x42c] = (AIO_IOB2_BI2X_S36)0x2;
+  this[0x42d] = (AIO_IOB2_BI2X_S36)0x8;
+  this[0x42e] = (AIO_IOB2_BI2X_S36)0x2;
+  this[0x42f] = (AIO_IOB2_BI2X_S36)0x4;
+  this[0x430] = (AIO_IOB2_BI2X_S36)0x1e;
+  *(undefined2 *)(this + 0x432) = 0x96;
+  this[0x434] = (AIO_IOB2_BI2X_S36)0x5;
+  this[0x435] = (AIO_IOB2_BI2X_S36)0x3;
+  this[0x436] = (AIO_IOB2_BI2X_S36)0x3c;
+  this[0x437] = (AIO_IOB2_BI2X_S36)0x19;
+  this[0x438] = (AIO_IOB2_BI2X_S36)0xa;
+  this[0x439] = (AIO_IOB2_BI2X_S36)0x5;
+  *(undefined2 *)(this + 0x43a) = 0x66;
+  *(undefined2 *)(this + 0x43c) = 0xa00;
+  *(undefined2 *)(this + 0x43e) = 0x1400;
+  *(undefined2 *)(this + 0x440) = 0x500;
+  *(undefined2 *)(this + 0x442) = 0xd800;
+  *(undefined2 *)(this + 0x444) = 0xe200;
+  *(undefined2 *)(this + 0x446) = 0xdd00;
+  *(undefined2 *)(this + 0x448) = 0xe700;
+  if (this == (AIO_IOB2_BI2X_S36 *)0x0) {
+    local_res10[0] = 9;
+    local_res10[1] = 8;
+    psVar1 = local_res10;
+  }
+  else {
+    local_res20[0] = *(undefined4 *)(this + 8);
+    psVar1 = (short *)local_res20;
+  }
+  if (*psVar1 == 0) {
+    local_20 = this;
+    IoReset(this,0,(PLYRIOSETTING *)0x0);
+    this[0x4c0] = (AIO_IOB2_BI2X_S36)0x0;
+    *(undefined8 *)(this + 0x2f7) = *(undefined8 *)(this + 0x492);
+    *(undefined8 *)(this + 0x2ff) = *(undefined8 *)(this + 0x49a);
+    *(undefined8 *)(this + 0x307) = *(undefined8 *)(this + 0x4a2);
+    *(undefined8 *)(this + 0x30f) = *(undefined8 *)(this + 0x4aa);
+    *(undefined8 *)(this + 0x317) = *(undefined8 *)(this + 0x4b2);
+    *(undefined4 *)(this + 799) = *(undefined4 *)(this + 0x4ba);
+    *(undefined2 *)(this + 0x323) = *(undefined2 *)(this + 0x4be);
+    *(undefined8 *)(this + 0x1bf) = *(undefined8 *)(this + 0x492);
+    *(undefined8 *)(this + 0x1c7) = *(undefined8 *)(this + 0x49a);
+    *(undefined8 *)(this + 0x1cf) = *(undefined8 *)(this + 0x4a2);
+    *(undefined8 *)(this + 0x1d7) = *(undefined8 *)(this + 0x4aa);
+    *(undefined8 *)(this + 0x1df) = *(undefined8 *)(this + 0x4b2);
+    *(undefined4 *)(this + 0x1e7) = *(undefined4 *)(this + 0x4ba);
+    *(undefined2 *)(this + 0x1eb) = *(undefined2 *)(this + 0x4be);
+    AC_MEMORY::Fill(local_28,(__uint64)(this + 0x2a6),'\x01');
+    *(uint *)(this + 0x170) = *(uint *)(this + 0x170) | 0x3f;
+  }
+  return this;
+}
+
+
+
+--- [EXPORT] Create @ 180002900 ---
+
+/* public: static class AIO_IOB2_BI2X_S36 * __ptr64 __cdecl AIO_IOB2_BI2X_S36::Create(char const *
+   __ptr64,class AC_HANDLE_T<class AIO_NMGR_IOB2> const & __ptr64,unsigned char) */
+
+AIO_IOB2_BI2X_S36 * __cdecl
+AIO_IOB2_BI2X_S36::Create(char *param_1,AC_HANDLE_T<AIO_NMGR_IOB2> *param_2,uchar param_3)
+
+{
+  AIO_NCTL_IOB *this;
+  AIO_IOB2_BI2X_S36 **ppAVar1;
+  undefined4 *puVar2;
+  AC_INITERR *pAVar3;
+  AIO_IOB2_BI2X_S36 *local_res20;
+  undefined4 local_28;
+  char local_24 [12];
+  AIO_NCTL_IOB *local_18;
+  undefined8 local_10;
+  
+                    /* 0x2900  23
+                       ?Create@AIO_IOB2_BI2X_S36@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_10 = 0xfffffffffffffffe;
+  local_res20 = AC_HNDLIF::operator_new(0x590);
+  if (local_res20 == (AIO_IOB2_BI2X_S36 *)0x0) {
+    this = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this = (AIO_NCTL_IOB *)AIO_IOB2_BI2X_S36(local_res20,param_2,param_3);
+  }
+  local_18 = this;
+  if (this == (AIO_NCTL_IOB *)0x0) {
+    local_res20 = (AIO_IOB2_BI2X_S36 *)CONCAT44(local_res20._4_4_,0x80009);
+    ppAVar1 = &local_res20;
+  }
+  else {
+    local_28 = *(undefined4 *)(this + 8);
+    ppAVar1 = (AIO_IOB2_BI2X_S36 **)&local_28;
+  }
+  if (*(short *)ppAVar1 == 0) {
+    puVar2 = (undefined4 *)AIO_NCTL_IOB::SetClassId(this,local_24);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+    if (*(short *)pAVar3 == 0) {
+      puVar2 = (undefined4 *)AIO_NCTL::AddNodeCtl((AIO_NCTL *)this);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this,0x229);
+      }
+    }
+  }
+  return (AIO_IOB2_BI2X_S36 *)this;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xS36_Create @ 1800042a0 ---
+
+AIO_NCTL_IOB * aioIob2Bi2xS36_Create(AC_HNDLIF *param_1,uchar param_2)
+
+{
+  int iVar1;
+  AIO_IOB2_BI2X_S36 *this;
+  AIO_NCTL_IOB *this_00;
+  short *psVar2;
+  AC_INITERR *pAVar3;
+  AC_HNDLIF *this_01;
+  short local_res8 [4];
+  undefined4 local_res18 [2];
+  char local_res20 [8];
+  AC_HNDLIF *local_20;
+  AIO_NCTL_IOB *local_18;
+  
+                    /* 0x42a0  64  aioIob2Bi2xS36_Create */
+  if (param_1 == (AC_HNDLIF *)0x0) {
+    return (AIO_NCTL_IOB *)0x0;
+  }
+  local_20 = param_1;
+  AC_HNDLIF::IncRefCount(param_1);
+  this = AC_HNDLIF::operator_new(0x590);
+  if (this == (AIO_IOB2_BI2X_S36 *)0x0) {
+    this_00 = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this_00 = (AIO_NCTL_IOB *)
+              AIO_IOB2_BI2X_S36::AIO_IOB2_BI2X_S36
+                        (this,(AC_HANDLE_T<AIO_NMGR_IOB2> *)&local_20,param_2);
+  }
+  if (this_00 == (AIO_NCTL_IOB *)0x0) {
+    local_res8[0] = 9;
+    local_res8[1] = 8;
+    psVar2 = local_res8;
+  }
+  else {
+    local_res18[0] = *(undefined4 *)(this_00 + 8);
+    psVar2 = (short *)local_res18;
+  }
+  local_18 = this_00;
+  if (*psVar2 == 0) {
+    AIO_NCTL_IOB::SetClassId(this_00,local_res20);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+    if (*(short *)pAVar3 == 0) {
+      AIO_NCTL::AddNodeCtl((AIO_NCTL *)this_00);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this_00,0x229);
+      }
+    }
+  }
+  if (local_20 != (AC_HNDLIF *)0x0) {
+    this_01 = AC_HNDLIF::HndlIfExchange((AC_HANDLE_T<AC_HNDLIF> *)&local_20,(AC_HNDLIF *)0x0);
+    iVar1 = AC_HNDLIF::DecRefCount(this_01);
+    if ((iVar1 == 0) && (this_01 != (AC_HNDLIF *)0x0)) {
+      (*(code *)**(undefined8 **)this_01)(this_01,1);
+    }
+  }
+  return this_00;
+}
+
+
+
+--- [EXPORT] ~AIO_IOB2_BI2X_SA1 @ 180004850 ---
+
+/* protected: virtual __cdecl AIO_IOB2_BI2X_SA1::~AIO_IOB2_BI2X_SA1(void) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_SA1::~AIO_IOB2_BI2X_SA1(AIO_IOB2_BI2X_SA1 *this)
+
+{
+                    /* 0x4850  6  ??1AIO_IOB2_BI2X_SA1@@MEAA@XZ */
+  *(undefined ***)this = vftable;
+  AIO_IOB2_BI2X::~AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this);
+  return;
+}
+
+
+
+--- [EXPORT] AIO_IOB2_BI2X_SA1 @ 180004a70 ---
+
+/* protected: __cdecl AIO_IOB2_BI2X_SA1::AIO_IOB2_BI2X_SA1(class AC_HANDLE_T<class AIO_NMGR_IOB2>
+   const & __ptr64,unsigned char) __ptr64 */
+
+AIO_IOB2_BI2X_SA1 * __thiscall
+AIO_IOB2_BI2X_SA1::AIO_IOB2_BI2X_SA1
+          (AIO_IOB2_BI2X_SA1 *this,AC_HANDLE_T<AIO_NMGR_IOB2> *param_1,uchar param_2)
+
+{
+  short *psVar1;
+  short local_res10 [4];
+  undefined4 local_res20 [2];
+  undefined1 local_38 [4];
+  undefined1 local_34 [4];
+  undefined1 local_30 [4];
+  undefined1 local_2c [4];
+  undefined1 local_28 [8];
+  AIO_IOB2_BI2X_SA1 *local_20;
+  undefined8 local_18;
+  
+                    /* 0x4a70  2  ??0AIO_IOB2_BI2X_SA1@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_18 = 0xfffffffffffffffe;
+  AIO_IOB2_BI2X::AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this,(AC_HANDLE_T<AIO_NMGR_IOB> *)param_1,param_2);
+  *(undefined ***)this = vftable;
+  this[0x14c0] = (AIO_IOB2_BI2X_SA1)0x0;
+  this[0x14c1] = (AIO_IOB2_BI2X_SA1)0x0;
+  this[0xf2] = (AIO_IOB2_BI2X_SA1)((byte)this[0xf2] | 1);
+  this[0xf3] = (AIO_IOB2_BI2X_SA1)((byte)this[0xf3] | 0xf);
+  AC_MEMORY::Fill(local_38,(__uint64)(this + 0x170),'X');
+  AC_MEMORY::Fill(local_34,(__uint64)(this + 0x7c8),'X');
+  AC_MEMORY::Fill(local_30,(__uint64)(this + 0xe20),0x9c);
+  AC_MEMORY::Fill(local_2c,(__uint64)(this + 0x14bc),'\x04');
+  if (this == (AIO_IOB2_BI2X_SA1 *)0x0) {
+    local_res10[0] = 9;
+    local_res10[1] = 8;
+    psVar1 = local_res10;
+  }
+  else {
+    local_res20[0] = *(undefined4 *)(this + 8);
+    psVar1 = (short *)local_res20;
+  }
+  if (*psVar1 == 0) {
+    *(undefined8 *)(this + 0x828) = *(undefined8 *)(this + 0xec4);
+    *(undefined8 *)(this + 0x830) = *(undefined8 *)(this + 0xecc);
+    *(undefined8 *)(this + 0x838) = *(undefined8 *)(this + 0xed4);
+    *(undefined8 *)(this + 0x840) = *(undefined8 *)(this + 0xedc);
+    *(undefined8 *)(this + 0x848) = *(undefined8 *)(this + 0xee4);
+    *(undefined8 *)(this + 0x850) = *(undefined8 *)(this + 0xeec);
+    *(undefined2 *)(this + 0x858) = *(undefined2 *)(this + 0xef4);
+    this[0x85a] = this[0xef6];
+    *(undefined8 *)(this + 0x1d0) = *(undefined8 *)(this + 0xec4);
+    *(undefined8 *)(this + 0x1d8) = *(undefined8 *)(this + 0xecc);
+    *(undefined8 *)(this + 0x1e0) = *(undefined8 *)(this + 0xed4);
+    *(undefined8 *)(this + 0x1e8) = *(undefined8 *)(this + 0xedc);
+    *(undefined8 *)(this + 0x1f0) = *(undefined8 *)(this + 0xee4);
+    *(undefined8 *)(this + 0x1f8) = *(undefined8 *)(this + 0xeec);
+    *(undefined2 *)(this + 0x200) = *(undefined2 *)(this + 0xef4);
+    this[0x202] = this[0xef6];
+    local_20 = this;
+    AC_MEMORY::Fill(local_28,(__uint64)(this + 0x7c4),'\x04');
+    *(uint *)(this + 0x170) = *(uint *)(this + 0x170) | 0x37;
+  }
+  return this;
+}
+
+
+
+--- [EXPORT] Create @ 180004c90 ---
+
+/* public: static class AIO_IOB2_BI2X_SA1 * __ptr64 __cdecl AIO_IOB2_BI2X_SA1::Create(char const *
+   __ptr64,class AC_HANDLE_T<class AIO_NMGR_IOB2> const & __ptr64,unsigned char) */
+
+AIO_IOB2_BI2X_SA1 * __cdecl
+AIO_IOB2_BI2X_SA1::Create(char *param_1,AC_HANDLE_T<AIO_NMGR_IOB2> *param_2,uchar param_3)
+
+{
+  AIO_NCTL_IOB *this;
+  AIO_IOB2_BI2X_SA1 **ppAVar1;
+  undefined4 *puVar2;
+  AC_INITERR *pAVar3;
+  AIO_IOB2_BI2X_SA1 *local_res20;
+  undefined4 local_28;
+  char local_24 [12];
+  AIO_NCTL_IOB *local_18;
+  undefined8 local_10;
+  
+                    /* 0x4c90  24
+                       ?Create@AIO_IOB2_BI2X_SA1@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_10 = 0xfffffffffffffffe;
+  local_res20 = AC_HNDLIF::operator_new(0x14d0);
+  if (local_res20 == (AIO_IOB2_BI2X_SA1 *)0x0) {
+    this = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this = (AIO_NCTL_IOB *)AIO_IOB2_BI2X_SA1(local_res20,param_2,param_3);
+  }
+  local_18 = this;
+  if (this == (AIO_NCTL_IOB *)0x0) {
+    local_res20 = (AIO_IOB2_BI2X_SA1 *)CONCAT44(local_res20._4_4_,0x80009);
+    ppAVar1 = &local_res20;
+  }
+  else {
+    local_28 = *(undefined4 *)(this + 8);
+    ppAVar1 = (AIO_IOB2_BI2X_SA1 **)&local_28;
+  }
+  if (*(short *)ppAVar1 == 0) {
+    puVar2 = (undefined4 *)AIO_NCTL_IOB::SetClassId(this,local_24);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+    if (*(short *)pAVar3 == 0) {
+      puVar2 = (undefined4 *)AIO_NCTL::AddNodeCtl((AIO_NCTL *)this);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this,0x229);
+      }
+    }
+  }
+  return (AIO_IOB2_BI2X_SA1 *)this;
+}
+
+
+
+--- [EXPORT] GetDeviceStatus @ 180004da0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::GetDeviceStatus(struct AIO_IOB2_BI2X_SA1::DEVSTATUS &
+   __ptr64)const __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_SA1::GetDeviceStatus(AIO_IOB2_BI2X_SA1 *this,DEVSTATUS *param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x4da0  29  ?GetDeviceStatus@AIO_IOB2_BI2X_SA1@@QEBAXAEAUDEVSTATUS@1@@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  memcpy(param_1,this + 0xe20,0xa4);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] IoReset @ 180004e10 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::IoReset(unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_SA1::IoReset(AIO_IOB2_BI2X_SA1 *this,uint param_1)
+
+{
+  AIO_IOB2_BI2X_SA1 AVar1;
+  AIO_IOB2_BI2X_SA1 *pAVar2;
+  uint uVar3;
+  longlong lVar4;
+  char cVar5;
+  AIO_IOB2_BI2X_SA1 *pAVar6;
+  longlong lVar7;
+  
+                    /* 0x4e10  33  ?IoReset@AIO_IOB2_BI2X_SA1@@QEAAXI@Z */
+  cVar5 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+  if (cVar5 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar5 = '\x01';
+  }
+  pAVar2 = this + 0xef3;
+  uVar3 = 0;
+  lVar4 = 4;
+  if (pAVar2 != (AIO_IOB2_BI2X_SA1 *)0x0) {
+    lVar7 = 4;
+    pAVar6 = pAVar2;
+    do {
+      AVar1 = *pAVar6;
+      pAVar6 = pAVar6 + 1;
+      uVar3 = uVar3 << 8 | (uint)(byte)AVar1;
+      lVar7 = lVar7 + -1;
+    } while (lVar7 != 0);
+    if (pAVar2 != (AIO_IOB2_BI2X_SA1 *)0x0) {
+      pAVar2 = this + 0xef7;
+      uVar3 = uVar3 | param_1;
+      do {
+        pAVar2 = pAVar2 + -1;
+        *pAVar2 = SUB41(uVar3,0);
+        uVar3 = uVar3 >> 8;
+        lVar4 = lVar4 + -1;
+      } while (lVar4 != 0);
+    }
+  }
+  this[0xef7] = (AIO_IOB2_BI2X_SA1)0x1;
+  if ('\0' < cVar5) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlCoinBlocker @ 180004eb0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::ControlCoinBlocker(unsigned int,bool) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_SA1::ControlCoinBlocker(AIO_IOB2_BI2X_SA1 *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+                    /* 0x4eb0  15  ?ControlCoinBlocker@AIO_IOB2_BI2X_SA1@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0xec4] = (AIO_IOB2_BI2X_SA1)((byte)this[0xec4] & 0xfb);
+    bVar2 = param_2 << 2;
+  }
+  else {
+    if (param_1 != 1) goto LAB_180004f0e;
+    this[0xec4] = (AIO_IOB2_BI2X_SA1)((byte)this[0xec4] & 0xf7);
+    bVar2 = param_2 << 3;
+  }
+  this[0xec4] = (AIO_IOB2_BI2X_SA1)((byte)this[0xec4] | bVar2);
+LAB_180004f0e:
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] AddCounter @ 180004f40 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::AddCounter(unsigned int,unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_SA1::AddCounter(AIO_IOB2_BI2X_SA1 *this,uint param_1,uint param_2)
+
+{
+  char cVar1;
+  char cVar2;
+  
+                    /* 0x4f40  10  ?AddCounter@AIO_IOB2_BI2X_SA1@@QEAAXII@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  cVar2 = (char)param_2;
+  if (param_1 == 0) {
+    this[0xec5] = (AIO_IOB2_BI2X_SA1)((char)this[0xec5] + cVar2);
+  }
+  else if (param_1 == 1) {
+    this[0xec6] = (AIO_IOB2_BI2X_SA1)((char)this[0xec6] + cVar2);
+  }
+  else if (param_1 == 2) {
+    this[0xec7] = (AIO_IOB2_BI2X_SA1)((char)this[0xec7] + cVar2);
+  }
+  else if (param_1 == 3) {
+    this[0xec8] = (AIO_IOB2_BI2X_SA1)((char)this[0xec8] + cVar2);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetStartLamp @ 180004fd0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::SetStartLamp(unsigned int,bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_SA1::SetStartLamp(AIO_IOB2_BI2X_SA1 *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  
+                    /* 0x4fd0  43  ?SetStartLamp@AIO_IOB2_BI2X_SA1@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0xec4] = (AIO_IOB2_BI2X_SA1)((byte)this[0xec4] & 0xfe);
+  }
+  else {
+    if (param_1 != 1) goto LAB_180005029;
+    this[0xec4] = (AIO_IOB2_BI2X_SA1)((byte)this[0xec4] & 0xfd);
+    param_2 = (bool)(param_2 * '\x02');
+  }
+  this[0xec4] = (AIO_IOB2_BI2X_SA1)((byte)this[0xec4] | param_2);
+LAB_180005029:
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlConveyor @ 180005060 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::ControlConveyor(unsigned int,unsigned int,unsigned
+   short,unsigned char) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_SA1::ControlConveyor
+          (AIO_IOB2_BI2X_SA1 *this,uint param_1,uint param_2,ushort param_3,uchar param_4)
+
+{
+  longlong lVar1;
+  AIO_IOB2_BI2X_SA1 *pAVar2;
+  char cVar3;
+  
+                    /* 0x5060  18  ?ControlConveyor@AIO_IOB2_BI2X_SA1@@QEAAXIIGE@Z */
+  cVar3 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+  if (cVar3 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar3 = '\x01';
+  }
+  if (param_1 == 0) {
+    switch(param_2 & 0xf) {
+    case 0:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff137) {
+        pAVar2 = this + 0xecb;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xed7] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 1:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff135) {
+        pAVar2 = this + 0xecd;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xed8] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 2:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff133) {
+        pAVar2 = this + 0xecf;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xed9] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 3:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff131) {
+        pAVar2 = this + 0xed1;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xeda] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 4:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff12f) {
+        pAVar2 = this + 0xed3;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xedb] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 5:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff12d) {
+        pAVar2 = this + 0xed5;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xedc] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 6:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff12b) {
+        pAVar2 = this + 0xed7;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xedd] = (AIO_IOB2_BI2X_SA1)param_4;
+    }
+  }
+  else if (param_1 == 1) {
+    switch(param_2 & 0xf) {
+    case 0:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff122) {
+        pAVar2 = this + 0xee0;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xeec] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 1:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff120) {
+        pAVar2 = this + 0xee2;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xeed] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 2:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff11e) {
+        pAVar2 = this + 0xee4;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xeee] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 3:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff11c) {
+        pAVar2 = this + 0xee6;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xeef] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 4:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff11a) {
+        pAVar2 = this + 0xee8;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xef0] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 5:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff118) {
+        pAVar2 = this + 0xeea;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xef1] = (AIO_IOB2_BI2X_SA1)param_4;
+      break;
+    case 6:
+      if (this != (AIO_IOB2_BI2X_SA1 *)0xfffffffffffff116) {
+        pAVar2 = this + 0xeec;
+        lVar1 = 2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB21(param_3,0);
+          param_3 = param_3 >> 8;
+          lVar1 = lVar1 + -1;
+        } while (lVar1 != 0);
+      }
+      this[0xef2] = (AIO_IOB2_BI2X_SA1)param_4;
+    }
+  }
+  this[0xec4] = (AIO_IOB2_BI2X_SA1)
+                (~(((byte)param_2 & 0xf0) << 3) & (byte)this[0xec4] | (char)(param_2 >> 4) << 7);
+  if ('\0' < cVar3) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTapeLedData @ 1800054f0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_SA1::SetTapeLedData(unsigned int,void const * __ptr64) __ptr64
+    */
+
+void __thiscall
+AIO_IOB2_BI2X_SA1::SetTapeLedData(AIO_IOB2_BI2X_SA1 *this,uint param_1,void *param_2)
+
+{
+  ushort uVar1;
+  ushort uVar2;
+  char cVar3;
+  
+                    /* 0x54f0  46  ?SetTapeLedData@AIO_IOB2_BI2X_SA1@@QEAAXIPEBX@Z */
+  if (param_1 < 0x1e) {
+    uVar1 = *(ushort *)(&DAT_18002c180 + (ulonglong)param_1 * 4);
+    uVar2 = (&DAT_18002c184)[(ulonglong)param_1 * 2];
+    cVar3 = (this != (AIO_IOB2_BI2X_SA1 *)0x0) + -1;
+    if (cVar3 == '\0') {
+      AC_MUTEX::Lock((AC_MUTEX *)this);
+      cVar3 = '\x01';
+    }
+    AIO_IOB2_BI2X::SetTapeLedData
+              ((AIO_IOB2_BI2X *)this,(ushort *)(this + (ulonglong)uVar1 * 2 + 0xef8),
+               (uint)uVar2 - (uint)uVar1,param_2,false);
+    this[(ulonglong)(param_1 >> 3) + 0x14b8] =
+         (AIO_IOB2_BI2X_SA1)
+         ((byte)this[(ulonglong)(param_1 >> 3) + 0x14b8] | '\x01' << ((byte)param_1 & 7));
+    if ('\0' < cVar3) {
+      AC_MUTEX::Unlock((AC_MUTEX *)this);
+    }
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_GetDeviceStatus @ 180005990 ---
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void * aioIob2Bi2xSA1_GetDeviceStatus(AC_MUTEX *param_1,__uint64 param_2,uint param_3)
+
+{
+  void *pvVar1;
+  uint *puVar2;
+  undefined1 auStack_108 [32];
+  uint local_e8;
+  uint local_e4 [3];
+  undefined1 local_d8 [176];
+  ulonglong local_28;
+  
+                    /* 0x5990  75  aioIob2Bi2xSA1_GetDeviceStatus */
+  local_28 = DAT_18002c2f0 ^ (ulonglong)auStack_108;
+  if (param_1 == (AC_MUTEX *)0x0) {
+    pvVar1 = (void *)0x0;
+  }
+  else {
+    local_e4[0] = param_3;
+    AC_MUTEX::Lock(param_1);
+    memcpy(local_d8,param_1 + 0xe20,0xa4);
+    AC_MUTEX::Unlock(param_1);
+    local_e8 = 0xa4;
+    puVar2 = local_e4;
+    if (0xa3 < param_3) {
+      puVar2 = &local_e8;
+    }
+    pvVar1 = (void *)(ulonglong)*puVar2;
+    AC_MEMORY::Copy(&local_e8,param_2,pvVar1);
+  }
+  return pvVar1;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_IoReset @ 180005a50 ---
+
+void aioIob2Bi2xSA1_IoReset(AC_MUTEX *param_1,uint param_2)
+
+{
+  AC_MUTEX AVar1;
+  AC_MUTEX *pAVar2;
+  AC_MUTEX *pAVar3;
+  uint uVar4;
+  longlong lVar5;
+  longlong lVar6;
+  
+                    /* 0x5a50  76  aioIob2Bi2xSA1_IoReset */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    pAVar2 = param_1 + 0xef3;
+    uVar4 = 0;
+    lVar5 = 4;
+    if (pAVar2 != (AC_MUTEX *)0x0) {
+      lVar6 = 4;
+      pAVar3 = pAVar2;
+      do {
+        AVar1 = *pAVar3;
+        pAVar3 = pAVar3 + 1;
+        uVar4 = uVar4 << 8 | (uint)(byte)AVar1;
+        lVar6 = lVar6 + -1;
+      } while (lVar6 != 0);
+      if (pAVar2 != (AC_MUTEX *)0x0) {
+        pAVar2 = param_1 + 0xef7;
+        uVar4 = uVar4 | param_2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB41(uVar4,0);
+          uVar4 = uVar4 >> 8;
+          lVar5 = lVar5 + -1;
+        } while (lVar5 != 0);
+      }
+    }
+    param_1[0xef7] = (AC_MUTEX)0x1;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_ControlCoinBlocker @ 180005af0 ---
+
+void aioIob2Bi2xSA1_ControlCoinBlocker(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+                    /* 0x5af0  72  aioIob2Bi2xSA1_ControlCoinBlocker */
+  if (param_1 == (AC_MUTEX *)0x0) {
+    return;
+  }
+  AC_MUTEX::Lock(param_1);
+  if (param_2 == 0) {
+    param_1[0xec4] = (AC_MUTEX)((byte)param_1[0xec4] & 0xfb);
+    bVar1 = (param_3 & 1) << 2;
+  }
+  else {
+    if (param_2 != 1) goto LAB_180005b47;
+    param_1[0xec4] = (AC_MUTEX)((byte)param_1[0xec4] & 0xf7);
+    bVar1 = (param_3 & 1) << 3;
+  }
+  param_1[0xec4] = (AC_MUTEX)((byte)param_1[0xec4] | bVar1);
+LAB_180005b47:
+  AC_MUTEX::Unlock(param_1);
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_AddCounter @ 180005b70 ---
+
+void aioIob2Bi2xSA1_AddCounter(AC_MUTEX *param_1,int param_2,char param_3)
+
+{
+                    /* 0x5b70  71  aioIob2Bi2xSA1_AddCounter */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0xec5] = (AC_MUTEX)((char)param_1[0xec5] + param_3);
+    }
+    else if (param_2 == 1) {
+      param_1[0xec6] = (AC_MUTEX)((char)param_1[0xec6] + param_3);
+    }
+    else if (param_2 == 2) {
+      param_1[0xec7] = (AC_MUTEX)((char)param_1[0xec7] + param_3);
+    }
+    else if (param_2 == 3) {
+      param_1[0xec8] = (AC_MUTEX)((char)param_1[0xec8] + param_3);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_SetStartLamp @ 180005c00 ---
+
+void aioIob2Bi2xSA1_SetStartLamp(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+                    /* 0x5c00  77  aioIob2Bi2xSA1_SetStartLamp */
+  if (param_1 == (AC_MUTEX *)0x0) {
+    return;
+  }
+  AC_MUTEX::Lock(param_1);
+  if (param_2 == 0) {
+    param_1[0xec4] = (AC_MUTEX)((byte)param_1[0xec4] & 0xfe);
+    bVar1 = param_3 & 1;
+  }
+  else {
+    if (param_2 != 1) goto LAB_180005c52;
+    param_1[0xec4] = (AC_MUTEX)((byte)param_1[0xec4] & 0xfd);
+    bVar1 = (param_3 & 1) * '\x02';
+  }
+  param_1[0xec4] = (AC_MUTEX)((byte)param_1[0xec4] | bVar1);
+LAB_180005c52:
+  AC_MUTEX::Unlock(param_1);
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_ControlConveyor @ 180005c80 ---
+
+void aioIob2Bi2xSA1_ControlConveyor
+               (AIO_IOB2_BI2X_SA1 *param_1,uint param_2,uint param_3,ushort param_4,uchar param_5)
+
+{
+                    /* 0x5c80  73  aioIob2Bi2xSA1_ControlConveyor */
+  if (param_1 != (AIO_IOB2_BI2X_SA1 *)0x0) {
+    AIO_IOB2_BI2X_SA1::ControlConveyor(param_1,param_2,param_3,param_4,param_5);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_SetTapeLedData @ 180005cb0 ---
+
+void aioIob2Bi2xSA1_SetTapeLedData(AIO_IOB2_BI2X_SA1 *param_1,uint param_2,void *param_3)
+
+{
+                    /* 0x5cb0  78  aioIob2Bi2xSA1_SetTapeLedData */
+  if (param_1 != (AIO_IOB2_BI2X_SA1 *)0x0) {
+    AIO_IOB2_BI2X_SA1::SetTapeLedData(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xSA1_Create @ 1800075c0 ---
+
+AIO_NCTL_IOB * aioIob2Bi2xSA1_Create(AC_HNDLIF *param_1,uchar param_2)
+
+{
+  int iVar1;
+  AIO_IOB2_BI2X_SA1 *this;
+  AIO_NCTL_IOB *this_00;
+  short *psVar2;
+  AC_INITERR *pAVar3;
+  AC_HNDLIF *this_01;
+  short local_res8 [4];
+  undefined4 local_res18 [2];
+  char local_res20 [8];
+  AC_HNDLIF *local_20;
+  AIO_NCTL_IOB *local_18;
+  
+                    /* 0x75c0  74  aioIob2Bi2xSA1_Create */
+  if (param_1 == (AC_HNDLIF *)0x0) {
+    return (AIO_NCTL_IOB *)0x0;
+  }
+  local_20 = param_1;
+  AC_HNDLIF::IncRefCount(param_1);
+  this = AC_HNDLIF::operator_new(0x14d0);
+  if (this == (AIO_IOB2_BI2X_SA1 *)0x0) {
+    this_00 = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this_00 = (AIO_NCTL_IOB *)
+              AIO_IOB2_BI2X_SA1::AIO_IOB2_BI2X_SA1
+                        (this,(AC_HANDLE_T<AIO_NMGR_IOB2> *)&local_20,param_2);
+  }
+  if (this_00 == (AIO_NCTL_IOB *)0x0) {
+    local_res8[0] = 9;
+    local_res8[1] = 8;
+    psVar2 = local_res8;
+  }
+  else {
+    local_res18[0] = *(undefined4 *)(this_00 + 8);
+    psVar2 = (short *)local_res18;
+  }
+  local_18 = this_00;
+  if (*psVar2 == 0) {
+    AIO_NCTL_IOB::SetClassId(this_00,local_res20);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+    if (*(short *)pAVar3 == 0) {
+      AIO_NCTL::AddNodeCtl((AIO_NCTL *)this_00);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this_00,0x229);
+      }
+    }
+  }
+  if (local_20 != (AC_HNDLIF *)0x0) {
+    this_01 = AC_HNDLIF::HndlIfExchange((AC_HANDLE_T<AC_HNDLIF> *)&local_20,(AC_HNDLIF *)0x0);
+    iVar1 = AC_HNDLIF::DecRefCount(this_01);
+    if ((iVar1 == 0) && (this_01 != (AC_HNDLIF *)0x0)) {
+      (*(code *)**(undefined8 **)this_01)(this_01,1);
+    }
+  }
+  return this_00;
+}
+
+
+
+--- [EXPORT] ~AIO_IOB2_BI2X_TCS @ 180007980 ---
+
+/* protected: virtual __cdecl AIO_IOB2_BI2X_TCS::~AIO_IOB2_BI2X_TCS(void) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::~AIO_IOB2_BI2X_TCS(AIO_IOB2_BI2X_TCS *this)
+
+{
+                    /* 0x7980  7  ??1AIO_IOB2_BI2X_TCS@@MEAA@XZ */
+  *(undefined ***)this = vftable;
+  AIO_IOB2_BI2X::~AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this);
+  return;
+}
+
+
+
+--- [EXPORT] AIO_IOB2_BI2X_TCS @ 180007ba0 ---
+
+/* protected: __cdecl AIO_IOB2_BI2X_TCS::AIO_IOB2_BI2X_TCS(class AC_HANDLE_T<class AIO_NMGR_IOB2>
+   const & __ptr64,unsigned char) __ptr64 */
+
+AIO_IOB2_BI2X_TCS * __thiscall
+AIO_IOB2_BI2X_TCS::AIO_IOB2_BI2X_TCS
+          (AIO_IOB2_BI2X_TCS *this,AC_HANDLE_T<AIO_NMGR_IOB2> *param_1,uchar param_2)
+
+{
+  short *psVar1;
+  short local_res10 [4];
+  undefined4 local_res20 [2];
+  undefined1 local_38 [4];
+  undefined1 local_34 [4];
+  undefined1 local_30 [4];
+  undefined1 local_2c [4];
+  undefined1 local_28 [8];
+  AIO_IOB2_BI2X_TCS *local_20;
+  undefined8 local_18;
+  
+                    /* 0x7ba0  3  ??0AIO_IOB2_BI2X_TCS@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_18 = 0xfffffffffffffffe;
+  AIO_IOB2_BI2X::AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this,(AC_HANDLE_T<AIO_NMGR_IOB> *)param_1,param_2);
+  *(undefined ***)this = vftable;
+  this[0x33f] = (AIO_IOB2_BI2X_TCS)0x0;
+  this[0x340] = (AIO_IOB2_BI2X_TCS)0x0;
+  this[0xf2] = (AIO_IOB2_BI2X_TCS)((byte)this[0xf2] | 1);
+  this[0xf3] = (AIO_IOB2_BI2X_TCS)((byte)this[0xf3] | 0xb);
+  AC_MEMORY::Fill(local_38,(__uint64)(this + 0x170),0x98);
+  AC_MEMORY::Fill(local_34,(__uint64)(this + 0x208),0x98);
+  AC_MEMORY::Fill(local_30,(__uint64)(this + 0x2a0),0x9e);
+  AC_MEMORY::Fill(local_2c,(__uint64)(this + 0x33e),'\x01');
+  if (this == (AIO_IOB2_BI2X_TCS *)0x0) {
+    local_res10[0] = 9;
+    local_res10[1] = 8;
+    psVar1 = local_res10;
+  }
+  else {
+    local_res20[0] = *(undefined4 *)(this + 8);
+    psVar1 = (short *)local_res20;
+  }
+  if (*psVar1 == 0) {
+    *(undefined8 *)(this + 0x21c) = *(undefined8 *)(this + 0x2ba);
+    this[0x224] = this[0x2c2];
+    *(undefined8 *)(this + 0x184) = *(undefined8 *)(this + 0x2ba);
+    this[0x18c] = this[0x2c2];
+    local_20 = this;
+    AC_MEMORY::Fill(local_28,(__uint64)(this + 0x206),'\x01');
+    *(uint *)(this + 0x170) = *(uint *)(this + 0x170) | 0x37;
+  }
+  return this;
+}
+
+
+
+--- [EXPORT] Create @ 180007d10 ---
+
+/* public: static class AIO_IOB2_BI2X_TCS * __ptr64 __cdecl AIO_IOB2_BI2X_TCS::Create(char const *
+   __ptr64,class AC_HANDLE_T<class AIO_NMGR_IOB2> const & __ptr64,unsigned char) */
+
+AIO_IOB2_BI2X_TCS * __cdecl
+AIO_IOB2_BI2X_TCS::Create(char *param_1,AC_HANDLE_T<AIO_NMGR_IOB2> *param_2,uchar param_3)
+
+{
+  AIO_NCTL_IOB *this;
+  AIO_IOB2_BI2X_TCS **ppAVar1;
+  undefined4 *puVar2;
+  AC_INITERR *pAVar3;
+  AIO_IOB2_BI2X_TCS *local_res20;
+  undefined4 local_28;
+  char local_24 [12];
+  AIO_NCTL_IOB *local_18;
+  undefined8 local_10;
+  
+                    /* 0x7d10  25
+                       ?Create@AIO_IOB2_BI2X_TCS@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_10 = 0xfffffffffffffffe;
+  local_res20 = AC_HNDLIF::operator_new(0x350);
+  if (local_res20 == (AIO_IOB2_BI2X_TCS *)0x0) {
+    this = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this = (AIO_NCTL_IOB *)AIO_IOB2_BI2X_TCS(local_res20,param_2,param_3);
+  }
+  local_18 = this;
+  if (this == (AIO_NCTL_IOB *)0x0) {
+    local_res20 = (AIO_IOB2_BI2X_TCS *)CONCAT44(local_res20._4_4_,0x80009);
+    ppAVar1 = &local_res20;
+  }
+  else {
+    local_28 = *(undefined4 *)(this + 8);
+    ppAVar1 = (AIO_IOB2_BI2X_TCS **)&local_28;
+  }
+  if (*(short *)ppAVar1 == 0) {
+    puVar2 = (undefined4 *)AIO_NCTL_IOB::SetClassId(this,local_24);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+    if (*(short *)pAVar3 == 0) {
+      puVar2 = (undefined4 *)AIO_NCTL::AddNodeCtl((AIO_NCTL *)this);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this,0x229);
+      }
+    }
+  }
+  return (AIO_IOB2_BI2X_TCS *)this;
+}
+
+
+
+--- [EXPORT] GetDeviceStatus @ 180007e20 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::GetDeviceStatus(struct AIO_IOB2_BI2X_TCS::DEVSTATUS &
+   __ptr64)const __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::GetDeviceStatus(AIO_IOB2_BI2X_TCS *this,DEVSTATUS *param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x7e20  30  ?GetDeviceStatus@AIO_IOB2_BI2X_TCS@@QEBAXAEAUDEVSTATUS@1@@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  *(undefined8 *)param_1 = *(undefined8 *)(this + 0x2a0);
+  *(undefined8 *)(param_1 + 8) = *(undefined8 *)(this + 0x2a8);
+  *(undefined8 *)(param_1 + 0x10) = *(undefined8 *)(this + 0x2b0);
+  *(undefined2 *)(param_1 + 0x18) = *(undefined2 *)(this + 0x2b8);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] IoReset @ 180008130 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::IoReset(unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::IoReset(AIO_IOB2_BI2X_TCS *this,uint param_1)
+
+{
+  AIO_IOB2_BI2X_TCS AVar1;
+  AIO_IOB2_BI2X_TCS *pAVar2;
+  uint uVar3;
+  longlong lVar4;
+  char cVar5;
+  AIO_IOB2_BI2X_TCS *pAVar6;
+  longlong lVar7;
+  
+                    /* 0x8130  34  ?IoReset@AIO_IOB2_BI2X_TCS@@QEAAXI@Z */
+  cVar5 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar5 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar5 = '\x01';
+  }
+  pAVar2 = this + 0x2bf;
+  uVar3 = 0;
+  lVar4 = 4;
+  if (pAVar2 != (AIO_IOB2_BI2X_TCS *)0x0) {
+    lVar7 = 4;
+    pAVar6 = pAVar2;
+    do {
+      AVar1 = *pAVar6;
+      pAVar6 = pAVar6 + 1;
+      uVar3 = uVar3 << 8 | (uint)(byte)AVar1;
+      lVar7 = lVar7 + -1;
+    } while (lVar7 != 0);
+    if (pAVar2 != (AIO_IOB2_BI2X_TCS *)0x0) {
+      pAVar2 = this + 0x2c3;
+      uVar3 = uVar3 | param_1;
+      do {
+        pAVar2 = pAVar2 + -1;
+        *pAVar2 = SUB41(uVar3,0);
+        uVar3 = uVar3 >> 8;
+        lVar4 = lVar4 + -1;
+      } while (lVar4 != 0);
+    }
+  }
+  this[0x2c3] = (AIO_IOB2_BI2X_TCS)0x1;
+  if ('\0' < cVar5) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetWatchDogTimer @ 1800081d0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::SetWatchDogTimer(unsigned char) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::SetWatchDogTimer(AIO_IOB2_BI2X_TCS *this,uchar param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x81d0  54  ?SetWatchDogTimer@AIO_IOB2_BI2X_TCS@@QEAAXE@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0x2ba] = (AIO_IOB2_BI2X_TCS)param_1;
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlCoinBlocker @ 180008230 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::ControlCoinBlocker(unsigned int,bool) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_TCS::ControlCoinBlocker(AIO_IOB2_BI2X_TCS *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  
+                    /* 0x8230  16  ?ControlCoinBlocker@AIO_IOB2_BI2X_TCS@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[699] = (AIO_IOB2_BI2X_TCS)((byte)this[699] & 0xfe);
+    this[699] = (AIO_IOB2_BI2X_TCS)((byte)this[699] | param_2);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] AddCounter @ 1800082a0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::AddCounter(unsigned int,unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::AddCounter(AIO_IOB2_BI2X_TCS *this,uint param_1,uint param_2)
+
+{
+  char cVar1;
+  
+                    /* 0x82a0  11  ?AddCounter@AIO_IOB2_BI2X_TCS@@QEAAXII@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[700] = (AIO_IOB2_BI2X_TCS)((char)this[700] + (char)param_2);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetPhotoLight @ 180008310 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::SetPhotoLight(bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::SetPhotoLight(AIO_IOB2_BI2X_TCS *this,bool param_1)
+
+{
+  char cVar1;
+  
+                    /* 0x8310  40  ?SetPhotoLight@AIO_IOB2_BI2X_TCS@@QEAAX_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[699] = (AIO_IOB2_BI2X_TCS)((byte)this[699] & 0xfd);
+  this[699] = (AIO_IOB2_BI2X_TCS)((byte)this[699] | param_1 * '\x02');
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetIccrLed @ 180008370 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::SetIccrLed(unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TCS::SetIccrLed(AIO_IOB2_BI2X_TCS *this,uint param_1)
+
+{
+  longlong lVar1;
+  ushort uVar2;
+  AIO_IOB2_BI2X_TCS *pAVar3;
+  char cVar4;
+  
+                    /* 0x8370  38  ?SetIccrLed@AIO_IOB2_BI2X_TCS@@QEAAXI@Z */
+  cVar4 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+  if (cVar4 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar4 = '\x01';
+  }
+  if (this != (AIO_IOB2_BI2X_TCS *)0xfffffffffffffd43) {
+    pAVar3 = this + 0x2bf;
+    lVar1 = 2;
+    uVar2 = (ushort)(param_1 >> 9) & 0x7c00 | (ushort)(param_1 >> 6) & 0x3e0 |
+            (ushort)(param_1 >> 3) & 0x1f;
+    do {
+      pAVar3 = pAVar3 + -1;
+      *pAVar3 = SUB21(uVar2,0);
+      uVar2 = uVar2 >> 8;
+      lVar1 = lVar1 + -1;
+    } while (lVar1 != 0);
+  }
+  if ('\0' < cVar4) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTapeLedData @ 180008410 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TCS::SetTapeLedData(unsigned int,void const * __ptr64) __ptr64
+    */
+
+void __thiscall
+AIO_IOB2_BI2X_TCS::SetTapeLedData(AIO_IOB2_BI2X_TCS *this,uint param_1,void *param_2)
+
+{
+  ushort uVar1;
+  ushort uVar2;
+  char cVar3;
+  
+                    /* 0x8410  47  ?SetTapeLedData@AIO_IOB2_BI2X_TCS@@QEAAXIPEBX@Z */
+  if (param_1 < 2) {
+    uVar1 = *(ushort *)(&DAT_18002c238 + (ulonglong)param_1 * 4);
+    uVar2 = (&DAT_18002c23c)[(ulonglong)param_1 * 2];
+    cVar3 = (this != (AIO_IOB2_BI2X_TCS *)0x0) + -1;
+    if (cVar3 == '\0') {
+      AC_MUTEX::Lock((AC_MUTEX *)this);
+      cVar3 = '\x01';
+    }
+    AIO_IOB2_BI2X::SetTapeLedData
+              ((AIO_IOB2_BI2X *)this,(ushort *)(this + (ulonglong)uVar1 * 2 + 0x2c4),
+               (uint)uVar2 - (uint)uVar1,param_2,true);
+    this[(ulonglong)(param_1 >> 3) + 0x33c] =
+         (AIO_IOB2_BI2X_TCS)
+         ((byte)this[(ulonglong)(param_1 >> 3) + 0x33c] | '\x01' << ((byte)param_1 & 7));
+    if ('\0' < cVar3) {
+      AC_MUTEX::Unlock((AC_MUTEX *)this);
+    }
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_GetDeviceStatus @ 180008870 ---
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void * aioIob2Bi2xTCS_GetDeviceStatus(AC_MUTEX *param_1,__uint64 param_2,uint param_3)
+
+{
+  void *pvVar1;
+  uint *puVar2;
+  undefined1 auStack_68 [32];
+  uint local_48;
+  uint local_44;
+  undefined8 local_40;
+  undefined8 local_38;
+  undefined8 local_30;
+  undefined2 local_28;
+  ulonglong local_20;
+  
+                    /* 0x8870  82  aioIob2Bi2xTCS_GetDeviceStatus */
+  local_20 = DAT_18002c2f0 ^ (ulonglong)auStack_68;
+  if (param_1 == (AC_MUTEX *)0x0) {
+    pvVar1 = (void *)0x0;
+  }
+  else {
+    local_44 = param_3;
+    AC_MUTEX::Lock(param_1);
+    local_40 = *(undefined8 *)(param_1 + 0x2a0);
+    local_38 = *(undefined8 *)(param_1 + 0x2a8);
+    local_30 = *(undefined8 *)(param_1 + 0x2b0);
+    local_28 = *(undefined2 *)(param_1 + 0x2b8);
+    AC_MUTEX::Unlock(param_1);
+    local_48 = 0x1a;
+    puVar2 = &local_44;
+    if (0x19 < param_3) {
+      puVar2 = &local_48;
+    }
+    pvVar1 = (void *)(ulonglong)*puVar2;
+    AC_MEMORY::Copy(&local_48,param_2,pvVar1);
+  }
+  return pvVar1;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_IoReset @ 180008940 ---
+
+void aioIob2Bi2xTCS_IoReset(AC_MUTEX *param_1,uint param_2)
+
+{
+  AC_MUTEX AVar1;
+  AC_MUTEX *pAVar2;
+  AC_MUTEX *pAVar3;
+  uint uVar4;
+  longlong lVar5;
+  longlong lVar6;
+  
+                    /* 0x8940  83  aioIob2Bi2xTCS_IoReset */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    pAVar2 = param_1 + 0x2bf;
+    uVar4 = 0;
+    lVar5 = 4;
+    if (pAVar2 != (AC_MUTEX *)0x0) {
+      lVar6 = 4;
+      pAVar3 = pAVar2;
+      do {
+        AVar1 = *pAVar3;
+        pAVar3 = pAVar3 + 1;
+        uVar4 = uVar4 << 8 | (uint)(byte)AVar1;
+        lVar6 = lVar6 + -1;
+      } while (lVar6 != 0);
+      if (pAVar2 != (AC_MUTEX *)0x0) {
+        pAVar2 = param_1 + 0x2c3;
+        uVar4 = uVar4 | param_2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB41(uVar4,0);
+          uVar4 = uVar4 >> 8;
+          lVar5 = lVar5 + -1;
+        } while (lVar5 != 0);
+      }
+    }
+    param_1[0x2c3] = (AC_MUTEX)0x1;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_SetWatchDogTimer @ 1800089e0 ---
+
+void aioIob2Bi2xTCS_SetWatchDogTimer(AC_MUTEX *param_1,AC_MUTEX param_2)
+
+{
+                    /* 0x89e0  87  aioIob2Bi2xTCS_SetWatchDogTimer */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0x2ba] = param_2;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_ControlCoinBlocker @ 180008a30 ---
+
+void aioIob2Bi2xTCS_ControlCoinBlocker(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+                    /* 0x8a30  80  aioIob2Bi2xTCS_ControlCoinBlocker */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[699] = (AC_MUTEX)((byte)param_1[699] & 0xfe);
+      param_1[699] = (AC_MUTEX)((byte)param_1[699] | param_3 & 1);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_AddCounter @ 180008aa0 ---
+
+void aioIob2Bi2xTCS_AddCounter(AC_MUTEX *param_1,int param_2,char param_3)
+
+{
+                    /* 0x8aa0  79  aioIob2Bi2xTCS_AddCounter */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[700] = (AC_MUTEX)((char)param_1[700] + param_3);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_SetPhotoLight @ 180008b00 ---
+
+void aioIob2Bi2xTCS_SetPhotoLight(AC_MUTEX *param_1,byte param_2)
+
+{
+                    /* 0x8b00  85  aioIob2Bi2xTCS_SetPhotoLight */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[699] = (AC_MUTEX)((byte)param_1[699] & 0xfd);
+    param_1[699] = (AC_MUTEX)((byte)param_1[699] | (param_2 & 1) * '\x02');
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_SetIccrLed @ 180008b60 ---
+
+void aioIob2Bi2xTCS_SetIccrLed(AC_MUTEX *param_1,uint param_2)
+
+{
+  longlong lVar1;
+  ushort uVar2;
+  AC_MUTEX *pAVar3;
+  
+                    /* 0x8b60  84  aioIob2Bi2xTCS_SetIccrLed */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_1 != (AC_MUTEX *)0xfffffffffffffd43) {
+      pAVar3 = param_1 + 0x2bf;
+      lVar1 = 2;
+      uVar2 = (ushort)(param_2 >> 9) & 0x7c00 | (ushort)(param_2 >> 6) & 0x3e0 |
+              (ushort)(param_2 >> 3) & 0x1f;
+      do {
+        pAVar3 = pAVar3 + -1;
+        *pAVar3 = SUB21(uVar2,0);
+        uVar2 = uVar2 >> 8;
+        lVar1 = lVar1 + -1;
+      } while (lVar1 != 0);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_SetTapeLedData @ 180008c00 ---
+
+void aioIob2Bi2xTCS_SetTapeLedData(AIO_IOB2_BI2X_TCS *param_1,uint param_2,void *param_3)
+
+{
+                    /* 0x8c00  86  aioIob2Bi2xTCS_SetTapeLedData */
+  if (param_1 != (AIO_IOB2_BI2X_TCS *)0x0) {
+    AIO_IOB2_BI2X_TCS::SetTapeLedData(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTCS_Create @ 180009c90 ---
+
+AIO_NCTL_IOB * aioIob2Bi2xTCS_Create(AC_HNDLIF *param_1,uchar param_2)
+
+{
+  int iVar1;
+  AIO_IOB2_BI2X_TCS *this;
+  AIO_NCTL_IOB *this_00;
+  short *psVar2;
+  AC_INITERR *pAVar3;
+  AC_HNDLIF *this_01;
+  short local_res8 [4];
+  undefined4 local_res18 [2];
+  char local_res20 [8];
+  AC_HNDLIF *local_20;
+  AIO_NCTL_IOB *local_18;
+  
+                    /* 0x9c90  81  aioIob2Bi2xTCS_Create */
+  if (param_1 == (AC_HNDLIF *)0x0) {
+    return (AIO_NCTL_IOB *)0x0;
+  }
+  local_20 = param_1;
+  AC_HNDLIF::IncRefCount(param_1);
+  this = AC_HNDLIF::operator_new(0x350);
+  if (this == (AIO_IOB2_BI2X_TCS *)0x0) {
+    this_00 = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this_00 = (AIO_NCTL_IOB *)
+              AIO_IOB2_BI2X_TCS::AIO_IOB2_BI2X_TCS
+                        (this,(AC_HANDLE_T<AIO_NMGR_IOB2> *)&local_20,param_2);
+  }
+  if (this_00 == (AIO_NCTL_IOB *)0x0) {
+    local_res8[0] = 9;
+    local_res8[1] = 8;
+    psVar2 = local_res8;
+  }
+  else {
+    local_res18[0] = *(undefined4 *)(this_00 + 8);
+    psVar2 = (short *)local_res18;
+  }
+  local_18 = this_00;
+  if (*psVar2 == 0) {
+    AIO_NCTL_IOB::SetClassId(this_00,local_res20);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+    if (*(short *)pAVar3 == 0) {
+      AIO_NCTL::AddNodeCtl((AIO_NCTL *)this_00);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this_00,0x229);
+      }
+    }
+  }
+  if (local_20 != (AC_HNDLIF *)0x0) {
+    this_01 = AC_HNDLIF::HndlIfExchange((AC_HANDLE_T<AC_HNDLIF> *)&local_20,(AC_HNDLIF *)0x0);
+    iVar1 = AC_HNDLIF::DecRefCount(this_01);
+    if ((iVar1 == 0) && (this_01 != (AC_HNDLIF *)0x0)) {
+      (*(code *)**(undefined8 **)this_01)(this_01,1);
+    }
+  }
+  return this_00;
+}
+
+
+
+--- [EXPORT] ~AIO_IOB2_BI2X_TDJ @ 18000a050 ---
+
+/* protected: virtual __cdecl AIO_IOB2_BI2X_TDJ::~AIO_IOB2_BI2X_TDJ(void) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::~AIO_IOB2_BI2X_TDJ(AIO_IOB2_BI2X_TDJ *this)
+
+{
+                    /* 0xa050  8  ??1AIO_IOB2_BI2X_TDJ@@MEAA@XZ */
+  *(undefined ***)this = vftable;
+  AIO_IOB2_BI2X::~AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this);
+  return;
+}
+
+
+
+--- [EXPORT] AIO_IOB2_BI2X_TDJ @ 18000a270 ---
+
+/* protected: __cdecl AIO_IOB2_BI2X_TDJ::AIO_IOB2_BI2X_TDJ(class AC_HANDLE_T<class AIO_NMGR_IOB2>
+   const & __ptr64,unsigned char) __ptr64 */
+
+AIO_IOB2_BI2X_TDJ * __thiscall
+AIO_IOB2_BI2X_TDJ::AIO_IOB2_BI2X_TDJ
+          (AIO_IOB2_BI2X_TDJ *this,AC_HANDLE_T<AIO_NMGR_IOB2> *param_1,uchar param_2)
+
+{
+  short *psVar1;
+  short local_res10 [4];
+  undefined4 local_res20 [2];
+  undefined1 local_38 [4];
+  undefined1 local_34 [4];
+  undefined1 local_30 [4];
+  undefined1 local_2c [4];
+  undefined1 local_28 [8];
+  AIO_IOB2_BI2X_TDJ *local_20;
+  undefined8 local_18;
+  
+                    /* 0xa270  4  ??0AIO_IOB2_BI2X_TDJ@@IEAA@AEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_18 = 0xfffffffffffffffe;
+  AIO_IOB2_BI2X::AIO_IOB2_BI2X((AIO_IOB2_BI2X *)this,(AC_HANDLE_T<AIO_NMGR_IOB> *)param_1,param_2);
+  *(undefined ***)this = vftable;
+  this[0x13ed] = (AIO_IOB2_BI2X_TDJ)0x0;
+  this[0x13ee] = (AIO_IOB2_BI2X_TDJ)0x0;
+  this[0xf2] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xf2] | 1);
+  this[0xf3] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xf3] | 0xb);
+  AC_MEMORY::Fill(local_38,(__uint64)(this + 0x170),'\b');
+  AC_MEMORY::Fill(local_34,(__uint64)(this + 0x778),'\b');
+  AC_MEMORY::Fill(local_30,(__uint64)(this + 0xd80),'l');
+  AC_MEMORY::Fill(local_2c,(__uint64)(this + 0x13ec),'\x01');
+  if (this == (AIO_IOB2_BI2X_TDJ *)0x0) {
+    local_res10[0] = 9;
+    local_res10[1] = 8;
+    psVar1 = local_res10;
+  }
+  else {
+    local_res20[0] = *(undefined4 *)(this + 8);
+    psVar1 = (short *)local_res20;
+  }
+  if (*psVar1 == 0) {
+    this[0x13e9] = (AIO_IOB2_BI2X_TDJ)0x55;
+    this[0xd7d] = (AIO_IOB2_BI2X_TDJ)0x55;
+    this[0x13ea] = (AIO_IOB2_BI2X_TDJ)0xff;
+    this[0xd7e] = (AIO_IOB2_BI2X_TDJ)0xff;
+    *(undefined8 *)(this + 0x7de) = *(undefined8 *)(this + 0xe4a);
+    *(undefined8 *)(this + 0x7e6) = *(undefined8 *)(this + 0xe52);
+    *(undefined4 *)(this + 0x7ee) = *(undefined4 *)(this + 0xe5a);
+    this[0x7f2] = this[0xe5e];
+    *(undefined8 *)(this + 0x1d6) = *(undefined8 *)(this + 0xe4a);
+    *(undefined8 *)(this + 0x1de) = *(undefined8 *)(this + 0xe52);
+    *(undefined4 *)(this + 0x1e6) = *(undefined4 *)(this + 0xe5a);
+    this[0x1ea] = this[0xe5e];
+    local_20 = this;
+    AC_MEMORY::Fill(local_28,(__uint64)(this + 0x772),'\x03');
+    *(uint *)(this + 0x170) = *(uint *)(this + 0x170) | 0x37;
+  }
+  return this;
+}
+
+
+
+--- [EXPORT] Create @ 18000a440 ---
+
+/* public: static class AIO_IOB2_BI2X_TDJ * __ptr64 __cdecl AIO_IOB2_BI2X_TDJ::Create(char const *
+   __ptr64,class AC_HANDLE_T<class AIO_NMGR_IOB2> const & __ptr64,unsigned char) */
+
+AIO_IOB2_BI2X_TDJ * __cdecl
+AIO_IOB2_BI2X_TDJ::Create(char *param_1,AC_HANDLE_T<AIO_NMGR_IOB2> *param_2,uchar param_3)
+
+{
+  AIO_NCTL_IOB *this;
+  AIO_IOB2_BI2X_TDJ **ppAVar1;
+  undefined4 *puVar2;
+  AC_INITERR *pAVar3;
+  AIO_IOB2_BI2X_TDJ *local_res20;
+  undefined4 local_28;
+  char local_24 [12];
+  AIO_NCTL_IOB *local_18;
+  undefined8 local_10;
+  
+                    /* 0xa440  26
+                       ?Create@AIO_IOB2_BI2X_TDJ@@SAPEAV1@PEBDAEBV?$AC_HANDLE_T@VAIO_NMGR_IOB2@@@@E@Z
+                        */
+  local_10 = 0xfffffffffffffffe;
+  local_res20 = AC_HNDLIF::operator_new(0x13f8);
+  if (local_res20 == (AIO_IOB2_BI2X_TDJ *)0x0) {
+    this = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this = (AIO_NCTL_IOB *)AIO_IOB2_BI2X_TDJ(local_res20,param_2,param_3);
+  }
+  local_18 = this;
+  if (this == (AIO_NCTL_IOB *)0x0) {
+    local_res20 = (AIO_IOB2_BI2X_TDJ *)CONCAT44(local_res20._4_4_,0x80009);
+    ppAVar1 = &local_res20;
+  }
+  else {
+    local_28 = *(undefined4 *)(this + 8);
+    ppAVar1 = (AIO_IOB2_BI2X_TDJ **)&local_28;
+  }
+  if (*(short *)ppAVar1 == 0) {
+    puVar2 = (undefined4 *)AIO_NCTL_IOB::SetClassId(this,local_24);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+    if (*(short *)pAVar3 == 0) {
+      puVar2 = (undefined4 *)AIO_NCTL::AddNodeCtl((AIO_NCTL *)this);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this + 8),*puVar2);
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this,0x229);
+      }
+    }
+  }
+  return (AIO_IOB2_BI2X_TDJ *)this;
+}
+
+
+
+--- [EXPORT] GetDeviceStatus @ 18000a550 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::GetDeviceStatus(struct AIO_IOB2_BI2X_TDJ::DEVSTATUS &
+   __ptr64)const __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::GetDeviceStatus(AIO_IOB2_BI2X_TDJ *this,DEVSTATUS *param_1)
+
+{
+  char cVar1;
+  
+                    /* 0xa550  31  ?GetDeviceStatus@AIO_IOB2_BI2X_TDJ@@QEBAXAEAUDEVSTATUS@1@@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  memcpy(param_1,this + 0xd80,0xca);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] IoReset @ 18000aac0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::IoReset(unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::IoReset(AIO_IOB2_BI2X_TDJ *this,uint param_1)
+
+{
+  AIO_IOB2_BI2X_TDJ AVar1;
+  AIO_IOB2_BI2X_TDJ *pAVar2;
+  uint uVar3;
+  longlong lVar4;
+  char cVar5;
+  AIO_IOB2_BI2X_TDJ *pAVar6;
+  longlong lVar7;
+  
+                    /* 0xaac0  35  ?IoReset@AIO_IOB2_BI2X_TDJ@@QEAAXI@Z */
+  cVar5 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar5 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar5 = '\x01';
+  }
+  pAVar2 = this + 0xe5b;
+  uVar3 = 0;
+  lVar4 = 4;
+  if (pAVar2 != (AIO_IOB2_BI2X_TDJ *)0x0) {
+    lVar7 = 4;
+    pAVar6 = pAVar2;
+    do {
+      AVar1 = *pAVar6;
+      pAVar6 = pAVar6 + 1;
+      uVar3 = uVar3 << 8 | (uint)(byte)AVar1;
+      lVar7 = lVar7 + -1;
+    } while (lVar7 != 0);
+    if (pAVar2 != (AIO_IOB2_BI2X_TDJ *)0x0) {
+      pAVar2 = this + 0xe5f;
+      uVar3 = uVar3 | param_1;
+      do {
+        pAVar2 = pAVar2 + -1;
+        *pAVar2 = SUB41(uVar3,0);
+        uVar3 = uVar3 >> 8;
+        lVar4 = lVar4 + -1;
+      } while (lVar4 != 0);
+    }
+  }
+  this[0xe5f] = (AIO_IOB2_BI2X_TDJ)0x1;
+  if ('\0' < cVar5) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetWatchDogTimer @ 18000ab60 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetWatchDogTimer(unsigned char) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::SetWatchDogTimer(AIO_IOB2_BI2X_TDJ *this,uchar param_1)
+
+{
+  char cVar1;
+  
+                    /* 0xab60  55  ?SetWatchDogTimer@AIO_IOB2_BI2X_TDJ@@QEAAXE@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0xe4a] = (AIO_IOB2_BI2X_TDJ)param_1;
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] ControlCoinBlocker @ 18000abc0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::ControlCoinBlocker(unsigned int,bool) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_TDJ::ControlCoinBlocker(AIO_IOB2_BI2X_TDJ *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  
+                    /* 0xabc0  17  ?ControlCoinBlocker@AIO_IOB2_BI2X_TDJ@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] & 0xfe);
+    this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] | param_2);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] AddCounter @ 18000ac30 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::AddCounter(unsigned int,unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::AddCounter(AIO_IOB2_BI2X_TDJ *this,uint param_1,uint param_2)
+
+{
+  char cVar1;
+  
+                    /* 0xac30  12  ?AddCounter@AIO_IOB2_BI2X_TDJ@@QEAAXII@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0xe4c] = (AIO_IOB2_BI2X_TDJ)((char)this[0xe4c] + (char)param_2);
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetStartLamp @ 18000aca0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetStartLamp(unsigned int,bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::SetStartLamp(AIO_IOB2_BI2X_TDJ *this,uint param_1,bool param_2)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+                    /* 0xaca0  44  ?SetStartLamp@AIO_IOB2_BI2X_TDJ@@QEAAXI_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] & 0xfd);
+    bVar2 = param_2 * '\x02';
+  }
+  else {
+    if (param_1 != 1) goto LAB_18000acfd;
+    this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] & 0xfb);
+    bVar2 = param_2 << 2;
+  }
+  this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] | bVar2);
+LAB_18000acfd:
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetVefxButtonLamp @ 18000ad30 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetVefxButtonLamp(bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::SetVefxButtonLamp(AIO_IOB2_BI2X_TDJ *this,bool param_1)
+
+{
+  char cVar1;
+  
+                    /* 0xad30  52  ?SetVefxButtonLamp@AIO_IOB2_BI2X_TDJ@@QEAAX_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] & 0xf7);
+  this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] | param_1 << 3);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetEffectButtonLamp @ 18000ad90 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetEffectButtonLamp(bool) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::SetEffectButtonLamp(AIO_IOB2_BI2X_TDJ *this,bool param_1)
+
+{
+  char cVar1;
+  
+                    /* 0xad90  37  ?SetEffectButtonLamp@AIO_IOB2_BI2X_TDJ@@QEAAX_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] & 0xef);
+  this[0xe4b] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4b] | param_1 << 4);
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetPlayerButtonLamp @ 18000adf0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetPlayerButtonLamp(unsigned int,unsigned int,bool)
+   __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_TDJ::SetPlayerButtonLamp
+          (AIO_IOB2_BI2X_TDJ *this,uint param_1,uint param_2,bool param_3)
+
+{
+  char cVar1;
+  
+                    /* 0xadf0  41  ?SetPlayerButtonLamp@AIO_IOB2_BI2X_TDJ@@QEAAXII_N@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    switch(param_2) {
+    case 0:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xfe);
+      break;
+    case 1:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xfd);
+      param_3 = (bool)(param_3 * '\x02');
+      break;
+    case 2:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xfb);
+      param_3 = (bool)(param_3 << 2);
+      break;
+    case 3:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xf7);
+      param_3 = (bool)(param_3 << 3);
+      break;
+    case 4:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xef);
+      param_3 = (bool)(param_3 << 4);
+      break;
+    case 5:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xdf);
+      param_3 = (bool)(param_3 << 5);
+      break;
+    case 6:
+      this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] & 0xbf);
+      param_3 = (bool)(param_3 << 6);
+      break;
+    default:
+      goto switchD_18000ae53_default;
+    }
+    this[0xe4f] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe4f] | param_3);
+  }
+  else if (param_1 == 1) {
+    switch(param_2) {
+    case 0:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xfe);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3);
+      break;
+    case 1:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xfd);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3 * '\x02');
+      break;
+    case 2:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xfb);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3 << 2);
+      break;
+    case 3:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xf7);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3 << 3);
+      break;
+    case 4:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xef);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3 << 4);
+      break;
+    case 5:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xdf);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3 << 5);
+      break;
+    case 6:
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] & 0xbf);
+      this[0xe55] = (AIO_IOB2_BI2X_TDJ)((byte)this[0xe55] | param_3 << 6);
+    }
+  }
+switchD_18000ae53_default:
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetWooferLed @ 18000aff0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetWooferLed(unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::SetWooferLed(AIO_IOB2_BI2X_TDJ *this,uint param_1)
+
+{
+  longlong lVar1;
+  ushort uVar2;
+  AIO_IOB2_BI2X_TDJ *pAVar3;
+  char cVar4;
+  
+                    /* 0xaff0  56  ?SetWooferLed@AIO_IOB2_BI2X_TDJ@@QEAAXI@Z */
+  cVar4 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar4 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar4 = '\x01';
+  }
+  if (this != (AIO_IOB2_BI2X_TDJ *)0xfffffffffffff1b3) {
+    pAVar3 = this + 0xe4f;
+    lVar1 = 2;
+    uVar2 = (ushort)(param_1 >> 9) & 0x7c00 | (ushort)(param_1 >> 6) & 0x3e0 |
+            (ushort)(param_1 >> 3) & 0x1f;
+    do {
+      pAVar3 = pAVar3 + -1;
+      *pAVar3 = SUB21(uVar2,0);
+      uVar2 = uVar2 >> 8;
+      lVar1 = lVar1 + -1;
+    } while (lVar1 != 0);
+  }
+  if ('\0' < cVar4) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetIccrLed @ 18000b090 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetIccrLed(unsigned int,unsigned int) __ptr64 */
+
+void __thiscall AIO_IOB2_BI2X_TDJ::SetIccrLed(AIO_IOB2_BI2X_TDJ *this,uint param_1,uint param_2)
+
+{
+  longlong lVar1;
+  ushort uVar2;
+  AIO_IOB2_BI2X_TDJ *pAVar3;
+  char cVar4;
+  
+                    /* 0xb090  39  ?SetIccrLed@AIO_IOB2_BI2X_TDJ@@QEAAXII@Z */
+  cVar4 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar4 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar4 = '\x01';
+  }
+  if (param_1 == 0) {
+    if (this != (AIO_IOB2_BI2X_TDJ *)0xfffffffffffff1b0) {
+      pAVar3 = this + 0xe52;
+      lVar1 = 2;
+      uVar2 = (ushort)(param_2 >> 9) & 0x7c00 | (ushort)(param_2 >> 6) & 0x3e0 |
+              (ushort)(param_2 >> 3) & 0x1f;
+      do {
+        pAVar3 = pAVar3 + -1;
+        *pAVar3 = SUB21(uVar2,0);
+        uVar2 = uVar2 >> 8;
+        lVar1 = lVar1 + -1;
+      } while (lVar1 != 0);
+    }
+  }
+  else if ((param_1 == 1) && (this != (AIO_IOB2_BI2X_TDJ *)0xfffffffffffff1aa)) {
+    pAVar3 = this + 0xe58;
+    lVar1 = 2;
+    uVar2 = (ushort)(param_2 >> 9) & 0x7c00 | (ushort)(param_2 >> 6) & 0x3e0 |
+            (ushort)(param_2 >> 3) & 0x1f;
+    do {
+      pAVar3 = pAVar3 + -1;
+      *pAVar3 = SUB21(uVar2,0);
+      uVar2 = uVar2 >> 8;
+      lVar1 = lVar1 + -1;
+    } while (lVar1 != 0);
+  }
+  if ('\0' < cVar4) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTurnTableLed @ 18000b1a0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetTurnTableLed(unsigned int,unsigned int) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_TDJ::SetTurnTableLed(AIO_IOB2_BI2X_TDJ *this,uint param_1,uint param_2)
+
+{
+  longlong lVar1;
+  ushort uVar2;
+  AIO_IOB2_BI2X_TDJ *pAVar3;
+  char cVar4;
+  
+                    /* 0xb1a0  50  ?SetTurnTableLed@AIO_IOB2_BI2X_TDJ@@QEAAXII@Z */
+  cVar4 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar4 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar4 = '\x01';
+  }
+  if (param_1 == 0) {
+    if (this != (AIO_IOB2_BI2X_TDJ *)0xfffffffffffff1ae) {
+      pAVar3 = this + 0xe54;
+      lVar1 = 2;
+      uVar2 = (ushort)(param_2 >> 9) & 0x7c00 | (ushort)(param_2 >> 6) & 0x3e0 |
+              (ushort)(param_2 >> 3) & 0x1f;
+      do {
+        pAVar3 = pAVar3 + -1;
+        *pAVar3 = SUB21(uVar2,0);
+        uVar2 = uVar2 >> 8;
+        lVar1 = lVar1 + -1;
+      } while (lVar1 != 0);
+    }
+  }
+  else if ((param_1 == 1) && (this != (AIO_IOB2_BI2X_TDJ *)0xfffffffffffff1a8)) {
+    pAVar3 = this + 0xe5a;
+    lVar1 = 2;
+    uVar2 = (ushort)(param_2 >> 9) & 0x7c00 | (ushort)(param_2 >> 6) & 0x3e0 |
+            (ushort)(param_2 >> 3) & 0x1f;
+    do {
+      pAVar3 = pAVar3 + -1;
+      *pAVar3 = SUB21(uVar2,0);
+      uVar2 = uVar2 >> 8;
+      lVar1 = lVar1 + -1;
+    } while (lVar1 != 0);
+  }
+  if ('\0' < cVar4) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTurnTableResist @ 18000b2b0 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetTurnTableResist(unsigned int,unsigned char) __ptr64 */
+
+void __thiscall
+AIO_IOB2_BI2X_TDJ::SetTurnTableResist(AIO_IOB2_BI2X_TDJ *this,uint param_1,uchar param_2)
+
+{
+  char cVar1;
+  
+                    /* 0xb2b0  51  ?SetTurnTableResist@AIO_IOB2_BI2X_TDJ@@QEAAXIE@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  if (param_1 == 0) {
+    this[0xe54] = (AIO_IOB2_BI2X_TDJ)param_2;
+  }
+  else if (param_1 == 1) {
+    this[0xe5a] = (AIO_IOB2_BI2X_TDJ)param_2;
+  }
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTapeLedDataLimit @ 18000b320 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetTapeLedDataLimit(unsigned char,unsigned char) __ptr64
+    */
+
+void __thiscall
+AIO_IOB2_BI2X_TDJ::SetTapeLedDataLimit(AIO_IOB2_BI2X_TDJ *this,uchar param_1,uchar param_2)
+
+{
+  char cVar1;
+  
+                    /* 0xb320  49  ?SetTapeLedDataLimit@AIO_IOB2_BI2X_TDJ@@QEAAXEE@Z */
+  cVar1 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+  if (cVar1 == '\0') {
+    AC_MUTEX::Lock((AC_MUTEX *)this);
+    cVar1 = '\x01';
+  }
+  this[0x13e9] = (AIO_IOB2_BI2X_TDJ)param_2;
+  this[0x13ea] = (AIO_IOB2_BI2X_TDJ)param_1;
+  if ('\0' < cVar1) {
+    AC_MUTEX::Unlock((AC_MUTEX *)this);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] SetTapeLedData @ 18000b390 ---
+
+/* public: void __cdecl AIO_IOB2_BI2X_TDJ::SetTapeLedData(unsigned int,void const * __ptr64) __ptr64
+    */
+
+void __thiscall
+AIO_IOB2_BI2X_TDJ::SetTapeLedData(AIO_IOB2_BI2X_TDJ *this,uint param_1,void *param_2)
+
+{
+  ushort uVar1;
+  char cVar2;
+  uint uVar3;
+  
+                    /* 0xb390  48  ?SetTapeLedData@AIO_IOB2_BI2X_TDJ@@QEAAXIPEBX@Z */
+  if (param_1 < 0x11) {
+    uVar1 = *(ushort *)(&DAT_18002c280 + (ulonglong)param_1 * 4);
+    uVar3 = (uint)(ushort)(&DAT_18002c284)[(ulonglong)param_1 * 2] - (uint)uVar1;
+    cVar2 = (this != (AIO_IOB2_BI2X_TDJ *)0x0) + -1;
+    if (cVar2 == '\0') {
+      AC_MUTEX::Lock((AC_MUTEX *)this);
+      cVar2 = '\x01';
+    }
+    switch(param_1) {
+    case 1:
+    case 6:
+    case 8:
+    case 9:
+    case 0xb:
+    case 0xd:
+    case 0xe:
+    case 0x10:
+      AIO_IOB2_BI2X::SetTapeLedData
+                ((AIO_IOB2_BI2X *)this,(ushort *)(this + (ulonglong)uVar1 * 2 + 0xe60),uVar3,param_2
+                 ,true);
+      break;
+    default:
+      AIO_IOB2_BI2X::SetTapeLedData
+                ((AIO_IOB2_BI2X *)this,(ushort *)(this + (ulonglong)uVar1 * 2 + 0xe60),uVar3,param_2
+                 ,false);
+    }
+    this[(ulonglong)(param_1 >> 3) + 0x13e6] =
+         (AIO_IOB2_BI2X_TDJ)
+         ((byte)this[(ulonglong)(param_1 >> 3) + 0x13e6] | '\x01' << ((byte)param_1 & 7));
+    if ('\0' < cVar2) {
+      AC_MUTEX::Unlock((AC_MUTEX *)this);
+    }
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_GetDeviceStatus @ 18000b860 ---
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void * aioIob2Bi2xTDJ_GetDeviceStatus(AC_MUTEX *param_1,__uint64 param_2,uint param_3)
+
+{
+  void *pvVar1;
+  uint *puVar2;
+  undefined1 auStack_128 [32];
+  uint local_108;
+  uint local_104 [3];
+  undefined1 local_f8 [208];
+  ulonglong local_28;
+  
+                    /* 0xb860  91  aioIob2Bi2xTDJ_GetDeviceStatus */
+  local_28 = DAT_18002c2f0 ^ (ulonglong)auStack_128;
+  if (param_1 == (AC_MUTEX *)0x0) {
+    pvVar1 = (void *)0x0;
+  }
+  else {
+    local_104[0] = param_3;
+    AC_MUTEX::Lock(param_1);
+    memcpy(local_f8,param_1 + 0xd80,0xca);
+    AC_MUTEX::Unlock(param_1);
+    local_108 = 0xca;
+    puVar2 = local_104;
+    if (0xc9 < param_3) {
+      puVar2 = &local_108;
+    }
+    pvVar1 = (void *)(ulonglong)*puVar2;
+    AC_MEMORY::Copy(&local_108,param_2,pvVar1);
+  }
+  return pvVar1;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_IoReset @ 18000b920 ---
+
+void aioIob2Bi2xTDJ_IoReset(AC_MUTEX *param_1,uint param_2)
+
+{
+  AC_MUTEX AVar1;
+  AC_MUTEX *pAVar2;
+  AC_MUTEX *pAVar3;
+  uint uVar4;
+  longlong lVar5;
+  longlong lVar6;
+  
+                    /* 0xb920  92  aioIob2Bi2xTDJ_IoReset */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    pAVar2 = param_1 + 0xe5b;
+    uVar4 = 0;
+    lVar5 = 4;
+    if (pAVar2 != (AC_MUTEX *)0x0) {
+      lVar6 = 4;
+      pAVar3 = pAVar2;
+      do {
+        AVar1 = *pAVar3;
+        pAVar3 = pAVar3 + 1;
+        uVar4 = uVar4 << 8 | (uint)(byte)AVar1;
+        lVar6 = lVar6 + -1;
+      } while (lVar6 != 0);
+      if (pAVar2 != (AC_MUTEX *)0x0) {
+        pAVar2 = param_1 + 0xe5f;
+        uVar4 = uVar4 | param_2;
+        do {
+          pAVar2 = pAVar2 + -1;
+          *pAVar2 = SUB41(uVar4,0);
+          uVar4 = uVar4 >> 8;
+          lVar5 = lVar5 + -1;
+        } while (lVar5 != 0);
+      }
+    }
+    param_1[0xe5f] = (AC_MUTEX)0x1;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetWatchDogTimer @ 18000b9c0 ---
+
+void aioIob2Bi2xTDJ_SetWatchDogTimer(AC_MUTEX *param_1,AC_MUTEX param_2)
+
+{
+                    /* 0xb9c0  102  aioIob2Bi2xTDJ_SetWatchDogTimer */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0xe4a] = param_2;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_ControlCoinBlocker @ 18000ba10 ---
+
+void aioIob2Bi2xTDJ_ControlCoinBlocker(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+                    /* 0xba10  89  aioIob2Bi2xTDJ_ControlCoinBlocker */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] & 0xfe);
+      param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] | param_3 & 1);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_AddCounter @ 18000ba80 ---
+
+void aioIob2Bi2xTDJ_AddCounter(AC_MUTEX *param_1,int param_2,char param_3)
+
+{
+                    /* 0xba80  88  aioIob2Bi2xTDJ_AddCounter */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0xe4c] = (AC_MUTEX)((char)param_1[0xe4c] + param_3);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetStartLamp @ 18000bae0 ---
+
+void aioIob2Bi2xTDJ_SetStartLamp(AC_MUTEX *param_1,int param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+                    /* 0xbae0  96  aioIob2Bi2xTDJ_SetStartLamp */
+  if (param_1 == (AC_MUTEX *)0x0) {
+    return;
+  }
+  AC_MUTEX::Lock(param_1);
+  if (param_2 == 0) {
+    param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] & 0xfd);
+    bVar1 = (param_3 & 1) * '\x02';
+  }
+  else {
+    if (param_2 != 1) goto LAB_18000bb36;
+    param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] & 0xfb);
+    bVar1 = (param_3 & 1) << 2;
+  }
+  param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] | bVar1);
+LAB_18000bb36:
+  AC_MUTEX::Unlock(param_1);
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetVefxButtonLamp @ 18000bb60 ---
+
+void aioIob2Bi2xTDJ_SetVefxButtonLamp(AC_MUTEX *param_1,byte param_2)
+
+{
+                    /* 0xbb60  101  aioIob2Bi2xTDJ_SetVefxButtonLamp */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] & 0xf7);
+    param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] | (param_2 & 1) << 3);
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetEffectButtonLamp @ 18000bbc0 ---
+
+void aioIob2Bi2xTDJ_SetEffectButtonLamp(AC_MUTEX *param_1,byte param_2)
+
+{
+                    /* 0xbbc0  93  aioIob2Bi2xTDJ_SetEffectButtonLamp */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] & 0xef);
+    param_1[0xe4b] = (AC_MUTEX)((byte)param_1[0xe4b] | (param_2 & 1) << 4);
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetPlayerButtonLamp @ 18000bc20 ---
+
+void aioIob2Bi2xTDJ_SetPlayerButtonLamp
+               (AIO_IOB2_BI2X_TDJ *param_1,uint param_2,uint param_3,bool param_4)
+
+{
+                    /* 0xbc20  95  aioIob2Bi2xTDJ_SetPlayerButtonLamp */
+  if (param_1 != (AIO_IOB2_BI2X_TDJ *)0x0) {
+    AIO_IOB2_BI2X_TDJ::SetPlayerButtonLamp(param_1,param_2,param_3,param_4);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetWooferLed @ 18000bc40 ---
+
+void aioIob2Bi2xTDJ_SetWooferLed(AC_MUTEX *param_1,uint param_2)
+
+{
+  longlong lVar1;
+  ushort uVar2;
+  AC_MUTEX *pAVar3;
+  
+                    /* 0xbc40  103  aioIob2Bi2xTDJ_SetWooferLed */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_1 != (AC_MUTEX *)0xfffffffffffff1b3) {
+      pAVar3 = param_1 + 0xe4f;
+      lVar1 = 2;
+      uVar2 = (ushort)(param_2 >> 9) & 0x7c00 | (ushort)(param_2 >> 6) & 0x3e0 |
+              (ushort)(param_2 >> 3) & 0x1f;
+      do {
+        pAVar3 = pAVar3 + -1;
+        *pAVar3 = SUB21(uVar2,0);
+        uVar2 = uVar2 >> 8;
+        lVar1 = lVar1 + -1;
+      } while (lVar1 != 0);
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetIccrLed @ 18000bce0 ---
+
+void aioIob2Bi2xTDJ_SetIccrLed(AIO_IOB2_BI2X_TDJ *param_1,uint param_2,uint param_3)
+
+{
+                    /* 0xbce0  94  aioIob2Bi2xTDJ_SetIccrLed */
+  if (param_1 != (AIO_IOB2_BI2X_TDJ *)0x0) {
+    AIO_IOB2_BI2X_TDJ::SetIccrLed(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetTurnTableLed @ 18000bd00 ---
+
+void aioIob2Bi2xTDJ_SetTurnTableLed(AIO_IOB2_BI2X_TDJ *param_1,uint param_2,uint param_3)
+
+{
+                    /* 0xbd00  99  aioIob2Bi2xTDJ_SetTurnTableLed */
+  if (param_1 != (AIO_IOB2_BI2X_TDJ *)0x0) {
+    AIO_IOB2_BI2X_TDJ::SetTurnTableLed(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetTurnTableResist @ 18000bd20 ---
+
+void aioIob2Bi2xTDJ_SetTurnTableResist(AC_MUTEX *param_1,int param_2,AC_MUTEX param_3)
+
+{
+                    /* 0xbd20  100  aioIob2Bi2xTDJ_SetTurnTableResist */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    if (param_2 == 0) {
+      param_1[0xe54] = param_3;
+    }
+    else if (param_2 == 1) {
+      param_1[0xe5a] = param_3;
+    }
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetTapeLedDataLimit @ 18000bd90 ---
+
+void aioIob2Bi2xTDJ_SetTapeLedDataLimit(AC_MUTEX *param_1,AC_MUTEX param_2,AC_MUTEX param_3)
+
+{
+                    /* 0xbd90  98  aioIob2Bi2xTDJ_SetTapeLedDataLimit */
+  if (param_1 != (AC_MUTEX *)0x0) {
+    AC_MUTEX::Lock(param_1);
+    param_1[0x13e9] = param_3;
+    param_1[0x13ea] = param_2;
+    AC_MUTEX::Unlock(param_1);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_SetTapeLedData @ 18000bdf0 ---
+
+void aioIob2Bi2xTDJ_SetTapeLedData(AIO_IOB2_BI2X_TDJ *param_1,uint param_2,void *param_3)
+
+{
+                    /* 0xbdf0  97  aioIob2Bi2xTDJ_SetTapeLedData */
+  if (param_1 != (AIO_IOB2_BI2X_TDJ *)0x0) {
+    AIO_IOB2_BI2X_TDJ::SetTapeLedData(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+
+--- [EXPORT] aioIob2Bi2xTDJ_Create @ 18000ce80 ---
+
+AIO_NCTL_IOB * aioIob2Bi2xTDJ_Create(AC_HNDLIF *param_1,uchar param_2)
+
+{
+  int iVar1;
+  AIO_IOB2_BI2X_TDJ *this;
+  AIO_NCTL_IOB *this_00;
+  short *psVar2;
+  AC_INITERR *pAVar3;
+  AC_HNDLIF *this_01;
+  short local_res8 [4];
+  undefined4 local_res18 [2];
+  char local_res20 [8];
+  AC_HNDLIF *local_20;
+  AIO_NCTL_IOB *local_18;
+  
+                    /* 0xce80  90  aioIob2Bi2xTDJ_Create */
+  if (param_1 == (AC_HNDLIF *)0x0) {
+    return (AIO_NCTL_IOB *)0x0;
+  }
+  local_20 = param_1;
+  AC_HNDLIF::IncRefCount(param_1);
+  this = AC_HNDLIF::operator_new(0x13f8);
+  if (this == (AIO_IOB2_BI2X_TDJ *)0x0) {
+    this_00 = (AIO_NCTL_IOB *)0x0;
+  }
+  else {
+    this_00 = (AIO_NCTL_IOB *)
+              AIO_IOB2_BI2X_TDJ::AIO_IOB2_BI2X_TDJ
+                        (this,(AC_HANDLE_T<AIO_NMGR_IOB2> *)&local_20,param_2);
+  }
+  if (this_00 == (AIO_NCTL_IOB *)0x0) {
+    local_res8[0] = 9;
+    local_res8[1] = 8;
+    psVar2 = local_res8;
+  }
+  else {
+    local_res18[0] = *(undefined4 *)(this_00 + 8);
+    psVar2 = (short *)local_res18;
+  }
+  local_18 = this_00;
+  if (*psVar2 == 0) {
+    AIO_NCTL_IOB::SetClassId(this_00,local_res20);
+    pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+    if (*(short *)pAVar3 == 0) {
+      AIO_NCTL::AddNodeCtl((AIO_NCTL *)this_00);
+      pAVar3 = AC_INITERR::SetInitError((AC_INITERR *)(this_00 + 8));
+      if (*(short *)pAVar3 == 0) {
+        AIO_NODE::SetState((AIO_NODE *)this_00,0x229);
+      }
+    }
+  }
+  if (local_20 != (AC_HNDLIF *)0x0) {
+    this_01 = AC_HNDLIF::HndlIfExchange((AC_HANDLE_T<AC_HNDLIF> *)&local_20,(AC_HNDLIF *)0x0);
+    iVar1 = AC_HNDLIF::DecRefCount(this_01);
+    if ((iVar1 == 0) && (this_01 != (AC_HNDLIF *)0x0)) {
+      (*(code *)**(undefined8 **)this_01)(this_01,1);
+    }
+  }
+  return this_00;
+}
+
+
+
+--- [EXPORT] entry @ 18000e570 ---
+
+void entry(undefined8 param_1,int param_2,longlong param_3)
+
+{
+  if (param_2 == 1) {
+    FUN_1800132f0();
+  }
+  FUN_18000e430(param_1,param_2,param_3);
+  return;
+}
+
+
+
+--- [INTERNAL] AddNodeCtl @ 18000d244 ---
+
+void __thiscall AIO_NCTL::AddNodeCtl(AIO_NCTL *this)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d244. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  AddNodeCtl(this);
+  return;
+}
+
+
+
+--- [INTERNAL] RecvPktDiscard @ 18000d256 ---
+
+void __thiscall AIO_NMGR_IOB::RecvPktDiscard(AIO_NMGR_IOB *this,char *param_1,uint param_2)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d256. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  RecvPktDiscard(this,param_1,param_2);
+  return;
+}
+
+
+
+--- [INTERNAL] ~AIO_IOB2_BI2X @ 18000d25c ---
+
+void __thiscall AIO_IOB2_BI2X::~AIO_IOB2_BI2X(AIO_IOB2_BI2X *this)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d25c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  ~AIO_IOB2_BI2X(this);
+  return;
+}
+
+
+
+--- [INTERNAL] CheckFirmware @ 18000d262 ---
+
+bool __thiscall AIO_IOB2_BI2X::CheckFirmware(AIO_IOB2_BI2X *this,FIRMINFO *param_1)
+
+{
+  bool bVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00018000d262. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  bVar1 = CheckFirmware(this,param_1);
+  return bVar1;
+}
+
+
+
+--- [INTERNAL] FirmPrgSetBootModule @ 18000d268 ---
+
+bool __thiscall
+AIO_IOB2_BI2X::FirmPrgSetBootModule
+          (AIO_IOB2_BI2X *this,void *param_1,FIRMINFO *param_2,bool param_3,void *param_4,
+          uint param_5)
+
+{
+  bool bVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00018000d268. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  bVar1 = FirmPrgSetBootModule(this,param_1,param_2,param_3,param_4,param_5);
+  return bVar1;
+}
+
+
+
+--- [INTERNAL] GetModuleDataSci @ 18000d274 ---
+
+MODDATA * __cdecl AIO_IOB2_BI2X::GetModuleDataSci(void)
+
+{
+  MODDATA *pMVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00018000d274. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  pMVar1 = GetModuleDataSci();
+  return pMVar1;
+}
+
+
+
+--- [INTERNAL] PacketSendRequest @ 18000d27a ---
+
+void __thiscall
+AIO_NMGR_IOB::PacketSendRequest
+          (AIO_NMGR_IOB *this,uchar param_1,uint param_2,void *param_3,uint param_4,uint param_5,
+          uint param_6,uint param_7,uint param_8,AC_VALIST *param_9)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d27a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  PacketSendRequest(this,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9);
+  return;
+}
+
+
+
+--- [INTERNAL] SetTapeLedData @ 18000d280 ---
+
+uchar * __thiscall
+AIO_IOB2_BI2X::SetTapeLedData
+          (AIO_IOB2_BI2X *this,ushort *param_1,uint param_2,uchar *param_3,bool param_4)
+
+{
+  uchar *puVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00018000d280. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  puVar1 = SetTapeLedData(this,param_1,param_2,param_3,param_4);
+  return puVar1;
+}
+
+
+
+--- [INTERNAL] AIO_IOB2_BI2X @ 18000d286 ---
+
+void __thiscall
+AIO_IOB2_BI2X::AIO_IOB2_BI2X(AIO_IOB2_BI2X *this,AC_HANDLE_T<AIO_NMGR_IOB> *param_1,uchar param_2)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d286. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  AIO_IOB2_BI2X(this,param_1,param_2);
+  return;
+}
+
+
+
+--- [INTERNAL] GenerateTapeLedGammaTable @ 18000d292 ---
+
+void __thiscall
+AIO_IOB2_BI2X::GenerateTapeLedGammaTable
+          (AIO_IOB2_BI2X *this,uchar *param_1,uchar param_2,float param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d292. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  GenerateTapeLedGammaTable(this,param_1,param_2,param_3);
+  return;
+}
+
+
+
+--- [INTERNAL] FirmPrgSetExFlags @ 18000d298 ---
+
+bool __thiscall
+AIO_IOB2_BI2X::FirmPrgSetExFlags(AIO_IOB2_BI2X *this,void *param_1,FIRMINFO *param_2,bool param_3)
+
+{
+  bool bVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00018000d298. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  bVar1 = FirmPrgSetExFlags(this,param_1,param_2,param_3);
+  return bVar1;
+}
+
+
+
+--- [INTERNAL] SetTapeLedDataLimited @ 18000d29e ---
+
+void __thiscall
+AIO_IOB2_BI2X::SetTapeLedDataLimited
+          (AIO_IOB2_BI2X *this,ushort *param_1,uint param_2,ushort *param_3,uchar param_4,
+          uchar param_5)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00018000d29e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  SetTapeLedDataLimited(this,param_1,param_2,param_3,param_4,param_5);
+  return;
+}
+
+
+
+--- [INTERNAL] _CreateFrameInfo @ 18000da60 ---
+
+/* Library Function - Single Match
+    _CreateFrameInfo
+   
+   Libraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release,
+   Visual Studio 2012 Release */
+
+undefined8 * _CreateFrameInfo(undefined8 *param_1,undefined8 param_2)
+
+{
+  DWORD *pDVar1;
+  undefined8 uVar2;
+  
+  *param_1 = param_2;
+  pDVar1 = FUN_18000eff0();
+  if (param_1 < *(undefined8 **)(pDVar1 + 0x48)) {
+    pDVar1 = FUN_18000eff0();
+    uVar2 = *(undefined8 *)(pDVar1 + 0x48);
+  }
+  else {
+    uVar2 = 0;
+  }
+  param_1[1] = uVar2;
+  pDVar1 = FUN_18000eff0();
+  *(undefined8 **)(pDVar1 + 0x48) = param_1;
+  return param_1;
+}
+
+
+
+--- [INTERNAL] _IsExceptionObjectToBeDestroyed @ 18000dab0 ---
+
+/* Library Function - Single Match
+    _IsExceptionObjectToBeDestroyed
+   
+   Library: Visual Studio 2005 Release */
+
+undefined8 _IsExceptionObjectToBeDestroyed(longlong param_1)
+
+{
+  longlong *plVar1;
+  DWORD *pDVar2;
+  
+  pDVar2 = FUN_18000eff0();
+  plVar1 = *(longlong **)(pDVar2 + 0x48);
+  while( true ) {
+    if (plVar1 == (longlong *)0x0) {
+      return 1;
+    }
+    if (*plVar1 == param_1) break;
+    plVar1 = (longlong *)plVar1[1];
+  }
+  return 0;
+}
+
+
+
+--- [INTERNAL] __GSHandlerCheckCommon @ 18000dfb0 ---
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+/* Library Function - Single Match
+    __GSHandlerCheckCommon
+   
+   Library: Visual Studio 2005 Release */
+
+byte __GSHandlerCheckCommon(undefined8 param_1,longlong param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = *(byte *)((ulonglong)*(uint *)(*(longlong *)(param_2 + 0x10) + 8) +
+                    *(longlong *)(param_2 + 8) + 3);
+  if ((bVar1 & 0xf) != 0) {
+    bVar1 = bVar1 & 0xf0;
+  }
+  return bVar1;
+}
+
+
+
+--- [INTERNAL] _initp_eh_hooks @ 18000e6c0 ---
+
+/* Library Function - Single Match
+    _initp_eh_hooks
+   
+   Libraries: Visual Studio 2005 Release, Visual Studio 2008 Release */
+
+void _initp_eh_hooks(void)
+
+{
+  DAT_18002d758 = FUN_18000eae0(0x18000e660);
+  return;
+}
+
+
+
+--- [INTERNAL] _init_pointers @ 180012320 ---
+
+/* Library Function - Single Match
+    _init_pointers
+   
+   Libraries: Visual Studio 2005 Release, Visual Studio 2008 Release */
+
+void __cdecl _init_pointers(void)
+
+{
+  INT_PTR IVar1;
+  
+  IVar1 = FUN_18000ebb0();
+  FUN_1800161a0(IVar1);
+  FUN_180016050(IVar1);
+  FUN_1800133b0(IVar1);
+  FUN_180016040(IVar1);
+  FUN_180016030(IVar1);
+  _initp_misc_winsig(IVar1);
+  FUN_18000e150();
+  _initp_eh_hooks();
+  PTR_FUN_18002c3c0 = (undefined *)FUN_18000eae0(0x180012300);
+  return;
+}
+
+
+
+--- [INTERNAL] _heap_init @ 180012570 ---
+
+/* Library Function - Single Match
+    _heap_init
+   
+   Library: Visual Studio 2005 Release */
+
+int __cdecl _heap_init(void)
+
+{
+  undefined4 local_res8 [8];
+  
+  DAT_18002dd40 = HeapCreate(0,0x1000,0);
+  if (DAT_18002dd40 == (HANDLE)0x0) {
+    return 0;
+  }
+  local_res8[0] = 2;
+  HeapSetInformation(DAT_18002dd40,HeapCompatibilityInformation,local_res8,4);
+  return 1;
+}
+
+
+
+--- [INTERNAL] _updatetlocinfoEx_nolock @ 180013eb0 ---
+
+/* Library Function - Single Match
+    _updatetlocinfoEx_nolock
+   
+   Library: Visual Studio 2005 Release */
+
+int * _updatetlocinfoEx_nolock(longlong *param_1,int *param_2)
+
+{
+  int *piVar1;
+  int *piVar2;
+  
+  if ((param_2 != (int *)0x0) && (param_1 != (longlong *)0x0)) {
+    piVar1 = (int *)*param_1;
+    if (piVar1 != param_2) {
+      *param_1 = (longlong)param_2;
+      __addlocaleref(param_2);
+      if (piVar1 != (int *)0x0) {
+        piVar2 = piVar1;
+        __removelocaleref(piVar1);
+        if ((*piVar2 == 0) && (piVar2 != (int *)&DAT_18002c750)) {
+          FUN_180013bd0(piVar1);
+        }
+      }
+    }
+    return param_2;
+  }
+  return (int *)0x0;
+}
+
+
+
+--- [INTERNAL] __updatetlocinfo @ 180013f10 ---
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Library Function - Single Match
+    __updatetlocinfo
+   
+   Library: Visual Studio 2005 Release */
+
+pthreadlocinfo __cdecl __updatetlocinfo(void)
+
+{
+  DWORD *pDVar1;
+  pthreadlocinfo ptVar2;
+  
+  pDVar1 = FUN_18000eff0();
+  if (((_DAT_18002ce10 & pDVar1[0x32]) == 0) || (*(longlong *)(pDVar1 + 0x30) == 0)) {
+    _lock(0xc);
+    ptVar2 = (pthreadlocinfo)
+             _updatetlocinfoEx_nolock((longlong *)(pDVar1 + 0x30),(int *)PTR_DAT_18002c8b0);
+    FUN_1800136b0(0xc);
+  }
+  else {
+    pDVar1 = FUN_18000eff0();
+    ptVar2 = *(pthreadlocinfo *)(pDVar1 + 0x30);
+  }
+  if (ptVar2 == (pthreadlocinfo)0x0) {
+    _amsg_exit(0x20);
+  }
+  return ptVar2;
+}
+
+
+
+--- [INTERNAL] __updatetmbcinfo @ 180014280 ---
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Library Function - Single Match
+    __updatetmbcinfo
+   
+   Library: Visual Studio 2008 Release */
+
+pthreadmbcinfo __cdecl __updatetmbcinfo(void)
+
+{
+  DWORD *pDVar1;
+  pthreadmbcinfo ptVar2;
+  
+  pDVar1 = FUN_18000eff0();
+  if (((_DAT_18002ce10 & pDVar1[0x32]) == 0) || (*(longlong *)(pDVar1 + 0x30) == 0)) {
+    _lock(0xd);
+    ptVar2 = *(pthreadmbcinfo *)(pDVar1 + 0x2e);
+    if (ptVar2 != (pthreadmbcinfo)PTR_DAT_18002cd00) {
+      if (ptVar2 != (pthreadmbcinfo)0x0) {
+        LOCK();
+        ptVar2->refcount = ptVar2->refcount + -1;
+        UNLOCK();
+        if ((ptVar2->refcount == 0) && (ptVar2 != (pthreadmbcinfo)&DAT_18002c8d0)) {
+          FUN_180012390(ptVar2);
+        }
+      }
+      *(undefined **)(pDVar1 + 0x2e) = PTR_DAT_18002cd00;
+      ptVar2 = (pthreadmbcinfo)PTR_DAT_18002cd00;
+      LOCK();
+      *(int *)PTR_DAT_18002cd00 = *(int *)PTR_DAT_18002cd00 + 1;
+      UNLOCK();
+    }
+    FUN_1800136b0(0xd);
+  }
+  else {
+    ptVar2 = *(pthreadmbcinfo *)(pDVar1 + 0x2e);
+  }
+  if (ptVar2 == (pthreadmbcinfo)0x0) {
+    _amsg_exit(0x20);
+  }
+  return ptVar2;
+}
+
+
+
+--- [INTERNAL] __onexitinit @ 180015bb0 ---
+
+/* Library Function - Single Match
+    __onexitinit
+   
+   Library: Visual Studio 2005 Release */
+
+undefined4 __onexitinit(void)
+
+{
+  undefined8 *puVar1;
+  
+  puVar1 = FUN_180012450(0x20,8);
+  DAT_18002e7e8 = FUN_18000eae0((INT_PTR)puVar1);
+  DAT_18002e7f0 = DAT_18002e7e8;
+  if (puVar1 == (undefined8 *)0x0) {
+    return 0x18;
+  }
+  *puVar1 = 0;
+  return 0;
+}
+
+
+
+--- [INTERNAL] _initp_misc_winsig @ 180015d50 ---
+
+/* Library Function - Single Match
+    _initp_misc_winsig
+   
+   Libraries: Visual Studio 2005 Release, Visual Studio 2008 Release */
+
+void _initp_misc_winsig(undefined8 param_1)
+
+{
+  DAT_18002e478 = param_1;
+  DAT_18002e480 = param_1;
+  DAT_18002e488 = param_1;
+  DAT_18002e490 = param_1;
+  return;
+}
+
+
+
