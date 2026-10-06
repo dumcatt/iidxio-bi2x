@@ -20,9 +20,12 @@
 
 #include "bi2x/bi2x_log.h"
 #include "bi2x/bi2x_tdj.h"
+#include "relay/relay_board.h"
 
 #define MODULE "iidxio-bi2x"
 #define CONNECT_TIMEOUT_MS 30000
+/* slider value without a relay board: all the way up */
+#define SLIDER_DEFAULT 15
 
 static log_formatter_t log_misc;
 static log_formatter_t log_info;
@@ -32,6 +35,7 @@ static log_formatter_t log_fatal;
 static struct bi2x_thread_api threads;
 static struct bi2x_tdj *bi2x;
 static struct bi2x_tdj_input input;
+static struct relay_board *relay;
 
 struct led_config {
     uint32_t woofer;
@@ -107,7 +111,13 @@ static uint32_t read_hex(
     return (uint32_t) strtoul(buf, NULL, 16);
 }
 
-static void load_config(char *port, size_t port_cap, struct bi2x_tdj_config *cfg)
+static void load_config(
+    char *port,
+    size_t port_cap,
+    struct bi2x_tdj_config *cfg,
+    char *relay_port,
+    size_t relay_port_cap,
+    struct relay_board_config *relay_cfg)
 {
     char path[MAX_PATH];
 
@@ -132,6 +142,14 @@ static void load_config(char *port, size_t port_cap, struct bi2x_tdj_config *cfg
     cfg->skip_reset = GetPrivateProfileIntA("BI2X", "SkipReset", 0, path);
     cfg->poll_interval_ms =
         (unsigned int) GetPrivateProfileIntA("BI2X", "PollInterval", 1, path);
+
+    GetPrivateProfileStringA(
+        "Relay", "Port", "", relay_port, (DWORD) relay_port_cap, path);
+    relay_cfg->port = relay_port;
+    relay_cfg->interval_ms =
+        (unsigned int) GetPrivateProfileIntA("Relay", "SendInterval", 8, path);
+    relay_cfg->panel_lamps =
+        GetPrivateProfileIntA("Relay", "PanelLamps", 0, path) != 0;
 }
 
 static void apply_static_leds(void)
@@ -184,7 +202,9 @@ bool iidx_io_init(
     thread_destroy_t thread_destroy)
 {
     struct bi2x_tdj_config cfg;
+    struct relay_board_config relay_cfg;
     static char port[256];
+    static char relay_port[256];
     int rc;
 
     threads.create = (bi2x_thread_create_t) thread_create;
@@ -192,17 +212,32 @@ bool iidx_io_init(
     threads.destroy = (bi2x_thread_destroy_t) thread_destroy;
 
     memset(&cfg, 0, sizeof(cfg));
-    load_config(port, sizeof(port), &cfg);
+    memset(&relay_cfg, 0, sizeof(relay_cfg));
+    load_config(
+        port, sizeof(port), &cfg, relay_port, sizeof(relay_port), &relay_cfg);
     cfg.threads = &threads;
     cfg.connect_timeout_ms = CONNECT_TIMEOUT_MS;
+    relay_cfg.threads = &threads;
 
     if (log_info != NULL) {
         log_info(MODULE, "starting (stand-alone BI2X driver)");
     }
 
+    /* started first so the top lights come on while the BI2X boots */
+    if (relay_port[0] != '\0') {
+        relay = relay_board_open(&relay_cfg);
+
+        if (relay == NULL && log_warning != NULL) {
+            log_warning(MODULE, "could not start the relay board driver");
+        }
+    }
+
     rc = bi2x_tdj_open(&cfg, &bi2x);
 
     if (rc < 0 || bi2x == NULL) {
+        relay_board_close(relay);
+        relay = NULL;
+
         if (log_fatal != NULL) {
             log_fatal(MODULE, "BI2X driver failed to start");
         }
@@ -229,6 +264,9 @@ void iidx_io_fini(void)
         bi2x_tdj_close(bi2x);
         bi2x = NULL;
     }
+
+    relay_board_close(relay);
+    relay = NULL;
 }
 
 void iidx_io_ep1_set_deck_lights(uint16_t deck_lights)
@@ -255,17 +293,19 @@ void iidx_io_ep1_set_panel_lights(uint8_t panel_lights)
         bi2x, (panel_lights >> IIDX_IO_PANEL_LIGHT_VEFX) & 1);
     bi2x_tdj_set_effect_button_lamp(
         bi2x, (panel_lights >> IIDX_IO_PANEL_LIGHT_EFFECT) & 1);
+    relay_board_set_panel_lamps(relay, panel_lights);
 }
 
 void iidx_io_ep1_set_top_lamps(uint8_t top_lamps)
 {
-    /* no spot lamps on a TDJ cabinet */
-    (void) top_lamps;
+    /* spotlights hang off the relay board of a legacy cabinet; does nothing
+       without one */
+    relay_board_set_spotlights(relay, top_lamps);
 }
 
 void iidx_io_ep1_set_top_neons(bool top_neons)
 {
-    (void) top_neons;
+    relay_board_set_neon(relay, top_neons);
 }
 
 bool iidx_io_ep1_send(void)
@@ -290,9 +330,8 @@ uint8_t iidx_io_ep2_get_turntable(uint8_t player_no)
 
 uint8_t iidx_io_ep2_get_slider(uint8_t slider_no)
 {
-    /* no sliders on BI2X */
-    (void) slider_no;
-    return 15;
+    /* no sliders on BI2X; the relay board has the effector faders */
+    return relay_board_get_fader(relay, slider_no, SLIDER_DEFAULT);
 }
 
 uint8_t iidx_io_ep2_get_sys(void)
@@ -325,7 +364,7 @@ uint16_t iidx_io_ep2_get_keys(void)
 
 bool iidx_io_ep3_write_16seg(const char *text)
 {
-    /* no 16 segment display either */
-    (void) text;
+    /* the 16 segment ticker is on the relay board too */
+    relay_board_set_ticker(relay, text);
     return true;
 }

@@ -51,7 +51,7 @@ if (WIN32)
 		message(WARNING "bemanitools submodule missing, skipping iidxio-bi2x.dll "
 		                "(git submodule update --init)")
 	else()
-		add_library(iidxio-bi2x SHARED src/iidxio.c)
+		add_library(iidxio-bi2x SHARED src/iidxio.c src/relay/relay_board.c)
 		target_include_directories(iidxio-bi2x PRIVATE bemanitools/src/main)
 		target_link_libraries(iidxio-bi2x bi2x)
 	endif()

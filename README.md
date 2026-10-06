@@ -69,7 +69,43 @@ Port=
 SkipReset=0
 ; ms between I/O polls
 PollInterval=1
+
+[Relay]
+; RS-232 port wired to a legacy cabinet's relay board, empty = not used
+Port=
+; ms between packets to the relay board
+SendInterval=8
+; 1 = also send the start / VEFX / effect lamps to the relay board
+PanelLamps=0
 ```
+
+### Legacy cabinet relay board
+
+On a legacy (LDJ) cabinet the 16 segment ticker, the eight spotlights, the
+neon and the five effector faders are not on the BIO2 but on the sub IO
+"relay board" (PWB116784480000), which the BIO2 normally talks to over
+RS-232. Set `[Relay] Port` and the DLL drives that board itself through a
+PC serial port, alongside the BI2X:
+
+| bemanitools call | Relay board |
+| :--- | :--- |
+| `iidx_io_ep3_write_16seg` | ticker, 9 characters passed on as they are |
+| `iidx_io_ep1_set_top_lamps` | spotlights, bit n = spotlight n from the left |
+| `iidx_io_ep1_set_top_neons` | neon |
+| `iidx_io_ep2_get_slider` | faders 1-5, 0 (bottom) to 15 (top); 15 until the board answers |
+| `iidx_io_ep1_set_panel_lights` | lamp byte, only with `PanelLamps=1` |
+
+It has to be a real RS-232 port (motherboard header or e.g. a Prolific USB
+adapter), not a TTL serial module. Unplug the BIO2's cable from the relay
+board and wire adapter DB9 pin 2 (RXD) to harness pin 1, pin 3 (TXD) to
+pin 3 and pin 5 (GND) to pin 2. The log says `relay: board is answering`
+once it works; if it says it is not answering, swap RX and TX first.
+
+The protocol and wiring come from LegacyDJ's `docs/relay-board.md`. Which bit belongs to
+which spotlight is taken from MAME's twinkle driver and has not been checked
+one spotlight at a time; the rest of the reply bytes (probably the effector
+buttons) are not identified yet and are logged at misc level when they
+change.
 
 Pillar colours are passed through the same brightness limiter the stock
 library uses, so a full white pillar is dimmed to stay within the power budget.
