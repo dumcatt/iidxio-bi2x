@@ -37,11 +37,34 @@ static struct bi2x_tdj *bi2x;
 static struct bi2x_tdj_input input;
 static struct relay_board *relay;
 
+enum led_section {
+    STAGE_1P,
+    STAGE_2P,
+    SIDE_1P,
+    SIDE_2P,
+    COMPANE,
+    CEILING_LEFT,
+    TITLE_LEFT,
+    TITLE_RIGHT,
+    CEILING_RIGHT,
+    TPSIDE_1P,
+    TPSIDE_2P,
+    PILLAR_1P_INNER,
+    PILLAR_1P_OUTER,
+    PILLAR_1P,
+    PILLAR_2P_INNER,
+    PILLAR_2P_OUTER,
+    PILLAR_2P,
+    SECTION_COUNT
+};
+
 struct led_config {
     uint32_t woofer;
     uint32_t tt[2];
     uint32_t iccr[2];
-    uint32_t pillar;
+    uint32_t tape_led;
+	int all_leds;
+	uint32_t sections[BI2X_TDJ_TAPE_SECTIONS];
     uint8_t tt_resist[2];
     int tape_limit_max;
     int tape_limit_avg;
@@ -128,7 +151,38 @@ static void load_config(
     leds.tt[1] = read_hex("LED", "TTP2", 0xFFFFFF, path);
     leds.iccr[0] = read_hex("LED", "IccrP1", 0xFFFFFF, path);
     leds.iccr[1] = read_hex("LED", "IccrP2", 0xFFFFFF, path);
-    leds.pillar = read_hex("LED", "Pillar", 0xFFFFFF, path);
+	leds.all_leds = GetPrivateProfileIntA("LED", "AllLeds", 1, path);
+
+    // If AllLeds is set, read the single TapeLed color; otherwise, read each section's color
+	if (leds.all_leds) {
+		leds.tape_led = read_hex("LED", "TapeLed", 0xFFFFFF, path);
+	}
+	else {
+        // Fix section keys to match the enum order
+		static const char *section_keys[BI2X_TDJ_TAPE_SECTIONS] = {
+            [STAGE_1P] = "Stage1P",
+            [STAGE_2P] = "Stage2P",
+            [SIDE_1P] = "Side1P",
+            [SIDE_2P] = "Side2P",
+            [COMPANE] = "Compane",
+            [CEILING_LEFT] = "CeilingLeft",
+            [TITLE_LEFT] = "TitleLeft",
+            [TITLE_RIGHT] = "TitleRight",
+            [CEILING_RIGHT] = "CeilingRight",
+            [TPSIDE_1P] = "TpSide1P",
+            [TPSIDE_2P] = "TpSide2P",
+            [PILLAR_1P_INNER] = "Pillar1PInner",
+            [PILLAR_1P_OUTER] = "Pillar1POuter",
+            [PILLAR_1P] = "Pillar1P",
+            [PILLAR_2P_INNER] = "Pillar2PInner",
+            [PILLAR_2P_OUTER] = "Pillar2POuter",
+            [PILLAR_2P] = "Pillar2P"
+        };
+
+        for (int i = 0; i < BI2X_TDJ_TAPE_SECTIONS; i++) {
+            leds.sections[i] = read_hex("LED", section_keys[i], 0xFFFFFF, path);
+        }
+	}
     leds.tape_limit_max = (int) read_hex("LED", "TapeMax", 0xFF, path);
     leds.tape_limit_avg = (int) read_hex("LED", "TapeAverageLimit", 0x55, path);
 
@@ -168,15 +222,32 @@ static void apply_static_leds(void)
     bi2x_tdj_set_tape_led_data_limit(
         bi2x, (uint8_t) leds.tape_limit_max, (uint8_t) leds.tape_limit_avg);
 
-    for (i = 0; i < sizeof(rgb) / 3; i++) {
-        rgb[i * 3 + 0] = (uint8_t) (leds.pillar >> 16);
-        rgb[i * 3 + 1] = (uint8_t) (leds.pillar >> 8);
-        rgb[i * 3 + 2] = (uint8_t) leds.pillar;
-    }
+    // If AllLeds is set, apply the same color to all tape LED sections; otherwise, apply each section's color individually
+	if (leds.all_leds) {
+		for (i = 0; i < sizeof(rgb) / 3; i++) {
+			rgb[i * 3 + 0] = (uint8_t) (leds.tape_led >> 16);
+			rgb[i * 3 + 1] = (uint8_t) (leds.tape_led >> 8);
+			rgb[i * 3 + 2] = (uint8_t) leds.tape_led;
+		}
 
-    for (section = 0; section < BI2X_TDJ_TAPE_SECTIONS; section++) {
-        bi2x_tdj_set_tape_led_data(bi2x, section, rgb);
-    }
+		for (section = 0; section < BI2X_TDJ_TAPE_SECTIONS; section++) {
+			bi2x_tdj_set_tape_led_data(bi2x, section, rgb);
+		}
+	}
+	else {
+		for (section = 0; section < BI2X_TDJ_TAPE_SECTIONS; section++) {
+            uint32_t color = leds.sections[section];
+            
+			for (i = 0; i < sizeof(rgb) / 3; i++) {
+				rgb[i * 3 + 0] = (uint8_t) (color >> 16);
+				rgb[i * 3 + 1] = (uint8_t) (color >> 8);
+				rgb[i * 3 + 2] = (uint8_t) color;
+			}
+			
+			bi2x_tdj_set_tape_led_data(bi2x, section, rgb);
+		}
+		
+	}
 
     bi2x_tdj_update(bi2x);
 }
